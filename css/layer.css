@@ -1,0 +1,22 @@
+/* 레이어 */
+.layerFix{display:none;font-size:0;}
+.layerFix.on{display:block !important;}
+.layerFix .layerBg{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.7);left:0;top:0;width:100%;height:100%;z-index:9998;}
+.layerFix .layerConWrap{position:fixed;z-index:9999;top:50%;left:50%;background:#fff;font-size:initial;overflow:auto;}
+.layerFix .layerCon{/*padding:10px; 여백이곳에*/}
+.layerFix .btnClLyr{display:inline-block;width:53px;height:53px;font-size:0;background:url(/m/images/xxx2.png)no-repeat center / 40% 40%;position:absolute;right:0;top:0;cursor:pointer;text-align:right;}
+.layerFix .btnClLyr i{font-size:40px;line-height:53px;width:53px;text-align:center;}
+
+.layerFix .secTop{position:absolute;height:53px;left:0;top:0;width:100%;z-index:99;}
+.layerFix .secTop .tit{font-size:20px;text-align:center;line-height:53px;font-weight:bold;box-shadow:0 0 8px #666;}
+.layerFix .secMid{font-size:14px;overflow-y:auto;}
+.layerFix .secBot{position:fixed;left:0;bottom:0;width:100%;height:53px;}
+.layerFix .secBot .btnCp{display:inline-block;width:100%;font-size:18px;color:#fff;text-align:center;line-height:53px;}
+
+.layerTab{display:none;}
+.layerTab.on{display:block;}
+.layerTab .layerBg{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.7);left:0;top:0;width:100%;height:100%;z-index:9998;}
+.layerTab li{display:none;position:fixed;z-index:9999;top:50%;left:50%;background:#fff;overflow-y:auto;}
+.layerTab li.on{display:block;}
+.layerTab .btnClLyr{display:inline-block;width:53px;height:53px;font-size:0;background:url(/m/images/xxx2.png)no-repeat center / 40% 40%;position:absolute;right:0;top:0;cursor:pointer;}
+.layerTab .btnClLyr i{font-size:40px;line-height:53px;width:53px;text-align:center;}
