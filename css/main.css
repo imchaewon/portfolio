@@ -85,7 +85,7 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
 -ms-transition:7s;
 -o-transition:7s;
 transition:7s;}
-.sct1 .swiper-slide.p1 .bg_img{background-image:url("../images/mbg1.jpg");}
+.sct1 .swiper-slide.p1 .bg_img{background-image:url("/images/mbg1.jpg");}
 .sct1 .swiper-slide.p2 .bg_img{background-image:url("../images/mbg2.jpg");}
 .sct1 .swiper-slide .bg_img:after{content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,.3)}
 .sct1 .swiper-slide-active .bg_img{
