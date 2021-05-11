@@ -17,7 +17,7 @@ $(window).load(function(){
 		$(".btn" + (idx + 1)).addClass("on").siblings().removeClass("on");
 	});
 
-	for (var i=1;i<=5;i++){
+	for (var i=0;i<=5;i++){
 		$(".p"+i).click(function(e){
 			var j = parseInt(e.target.className.substr(1,1)) + 1;
 			$("html,body").animate({"scrollTop":eval("ofstop" + j)},"easeOutQuad");
