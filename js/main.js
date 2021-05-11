@@ -6,27 +6,27 @@ $(window).load(function(){
 
 	$('html,body').animate({scrollTop:$(".sct1").offset().top},400,"easeOutQuad");
 
-	for (var i=1;i<=6;i++){
-		eval("var ofstop" + i + " = $('.sct" + i + "').offset().top");
+	for (let i=1;i<=6;i++){
+		eval("let ofstop" + i + " = $('.sct" + i + "').offset().top");
 	}
 
 	$(".btn_page li").click(function(){
-		var idx = $(this).index();
+		let idx = $(this).index();
 
 		$("html,body").animate({"scrollTop":eval("ofstop" + (idx + 1))},"easeOutQuad");
 		$(".btn" + (idx + 1)).addClass("on").siblings().removeClass("on");
 	});
 
-	for (var i=0;i<=5;i++){
+	for (let i=0;i<=5;i++){
 		$(".p"+i).click(function(e){
-			var j = parseInt(e.target.className.substr(1,1)) + 1;
+			let j = parseInt(e.target.className.substr(1,1)) + 1;
 			$("html,body").animate({"scrollTop":eval("ofstop" + j)},"easeOutQuad");
 			$(".btn" + j).addClass("on").siblings().removeClass("on");
 		});
 	}
 
 	$(".help").click(function(){
-		var t = $(this);
+		let t = $(this);
 		t.fadeOut();
 		$(".btn_page_txt").stop().toggle(500);
 		setTimeout(function() {
@@ -35,7 +35,7 @@ $(window).load(function(){
 		}, 2000);
 	});
 
-	var sct1Sl = new Swiper('.sct1 .swiper-container',{
+	let sct1Sl = new Swiper('.sct1 .swiper-container',{
 		nextButton: '.sct1 .swiper-button-next',
 		prevButton: '.sct1 .swiper-button-prev',
 		speed:500,
@@ -50,22 +50,22 @@ $(window).load(function(){
 		$(".about1").delay(300).animate({"left":100,"top":256,"margin-left":0,"opacity":1},400);
 		$(".about2").delay(0).animate({"top":100,"opacity":1},400);
 		$(".about3").delay(50).animate({"right":100,"margin-right":0,"opacity":1},400,function(){
-			for (var i=1;i<=5;i++){
+			for (let i=1;i<=5;i++){
 				$(".skill" + i + " .graph>div").eq(0).animate({"background-color":"#222"});
 			}
-			for (var i=1;i<=4;i++){
+			for (let i=1;i<=4;i++){
 				$(".skill1 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (var i=1;i<=3;i++){
+			for (let i=1;i<=3;i++){
 				$(".skill2 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (var i=1;i<=4;i++){
+			for (let i=1;i<=4;i++){
 				$(".skill3 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (var i=1;i<=4;i++){
+			for (let i=1;i<=4;i++){
 				$(".skill4 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (var i=1;i<=4;i++){
+			for (let i=1;i<=4;i++){
 				$(".skill5 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
 		});
@@ -76,7 +76,7 @@ $(window).load(function(){
 		$(this).colorbox();
 	});
 	
-	var sl3 = new Swiper('.sct3 .swiper-container',{
+	let sl3 = new Swiper('.sct3 .swiper-container',{
 		pagination: ".sct3 .swiper-pagination",
 		nextButton: '.sct3 .swiper-next',
 		prevButton: '.sct3 .swiper-prev',
@@ -93,7 +93,7 @@ $(window).load(function(){
 		overlayOpacity: 0.6
 	});
 
-	var sl4 = new Swiper('.sct4 .swiper-container',{
+	let sl4 = new Swiper('.sct4 .swiper-container',{
 		pagination: ".sct4 .swiper-pagination",
 		nextButton: '.sct4 .swiper-next',
 		prevButton: '.sct4 .swiper-prev',
@@ -107,12 +107,12 @@ $(window).load(function(){
 	});
 
 	(() => {
-		var tmp = 18; //초기값
+		let tmp = 18; //초기값
 		$('.sct5 .conWrap .tit li').click(function(e){
 			e.preventDefault();
-			var idx1 = $(this).index();
-			var idx2 = $(this).parent().index();
-			var idx3 = idx1 + idx2 * 6;
+			let idx1 = $(this).index();
+			let idx2 = $(this).parent().index();
+			let idx3 = idx1 + idx2 * 6;
 			$('.sct5 .con>ul>li').eq(tmp).stop().css("z-index",2).animate({"opacity":0,"width":0,"height":0},1000);
 			$('.sct5 .con>ul>li').eq(idx1 + idx2 * 6).stop().css("z-index",1).animate({"opacity":1,'width':'100%','height':'100%'},300).show();
 			tmp = idx3;
@@ -123,7 +123,7 @@ $(window).load(function(){
 		// 개별적으로 Wheel 이벤트 적용
 		$(this).children().on("mousewheel DOMMouseScroll", function(e) {
 			e.preventDefault();
-			var delta = 0;
+			let delta = 0;
 			if (!event) event = window.event;
 			if (event.wheelDelta) {
 				delta = event.wheelDelta / 120;
@@ -133,7 +133,7 @@ $(window).load(function(){
 			} else if (event.detail){
 				delta = -event.detail / 3;
 			}
-			var moveTop = null;
+			let moveTop = null;
 			if (delta < 0) { // 마우스휠을 위에서 아래로
 				if ($(this).next() != undefined && $(this).next().offset() != undefined) {
 					moveTop = $(this).next().offset().top;
@@ -161,9 +161,9 @@ $(window).load(function(){
 });
 
 $(window).scroll(function(){
-	var s=$(document).scrollTop();
-	for (var i=1;i<=6;i++){
-		eval("var ofstop" + i + " = $('.sct" + i + "').offset().top");
+	let s=$(document).scrollTop();
+	for (let i=1;i<=6;i++){
+		eval("let ofstop" + i + " = $('.sct" + i + "').offset().top");
 	}
 
 //	console.log(ofstop1);//0
