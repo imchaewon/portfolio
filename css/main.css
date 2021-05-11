@@ -132,7 +132,7 @@ transition:7s;}
 /*학력*/
 .sct2 .box .about1{background:#5b5b5b url(../images/about_edu.png) no-repeat center 2.81rem;position:absolute;left:50%;top:16rem;margin-left:-9.78rem;opacity:0;}
 .sct2 .box .about2{background:#5b5b5b url(../images/about_profile.png) no-repeat center 2.81rem;position:absolute;left:50%;top:16rem;margin-left:-9.78rem;opacity:0;}
-.sct2 .box .about2 a{color:#e0e0e0;letter-spacing:-..31rem;}
+.sct2 .box .about2 a{color:#e0e0e0;letter-spacing:-.31rem;}
 .sct2 .box .about3{background:#5b5b5b url(../images/about_skils_min.png) no-repeat center 2.81rem;position:absolute;right:50%;margin-right:-9.78rem;top:16rem;opacity:0;}
 .sct2 .box .about3 .skill_wrap{margin-top:6.25rem;text-align:right;}
 .sct2 .box .about3 .skill_wrap .skill1,.skill2,.skill3,.skill4,.skill5{height:1.87rem;text-indent:3.75rem;}
