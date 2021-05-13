@@ -163,7 +163,7 @@ $(window).load(function(){
 $(window).scroll(function(){
 	let s=$(document).scrollTop();
 	for (let i=1;i<=6;i++){
-		eval("let ofstop" + i + " = $('.sct" + i + "').offset().top");
+		eval("var ofstop" + i + " = $('.sct" + i + "').offset().top");
 	}
 
 //	console.log(ofstop1);//0
