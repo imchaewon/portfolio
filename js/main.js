@@ -87,6 +87,7 @@ $(window).load(function(){
 		autoplay:2500,
 		slidesPerView : 'auto'
 	});
+	console.log(11111111);
 	console.log(sl3);
 
 	$(".sct4 li a").lightBox({
@@ -106,7 +107,9 @@ $(window).load(function(){
 		autoplay:2500,
 		slidesPerView : 'auto'
 	});
+	console.log(2222222222);
 	console.log(sl4);
+	console.log("sl4" + sl4);
 
 	(() => {
 		let tmp = 18; //초기값
