@@ -7,7 +7,7 @@ $(window).load(function(){
 	$('html,body').animate({scrollTop:$(".sct1").offset().top},400,"easeOutQuad");
 
 	for (let i=1;i<=6;i++){
-		eval("let ofstop" + i + " = $('.sct" + i + "').offset().top");
+		eval("var ofstop" + i + " = $('.sct" + i + "').offset().top");
 	}
 
 	$(".btn_page li").click(function(){
@@ -35,7 +35,7 @@ $(window).load(function(){
 		}, 2000);
 	});
 
-	let sct1Sl = new Swiper('.sct1 .swiper-container',{
+	var sct1Sl = new Swiper('.sct1 .swiper-container',{
 		nextButton: '.sct1 .swiper-button-next',
 		prevButton: '.sct1 .swiper-button-prev',
 		speed:500,
@@ -76,7 +76,7 @@ $(window).load(function(){
 		$(this).colorbox();
 	});
 	
-	let sl3 = new Swiper('.sct3 .swiper-container',{
+	var sl3 = new Swiper('.sct3 .swiper-container',{
 		pagination: ".sct3 .swiper-pagination",
 		nextButton: '.sct3 .swiper-next',
 		prevButton: '.sct3 .swiper-prev',
