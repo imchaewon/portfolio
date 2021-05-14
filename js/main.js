@@ -35,7 +35,7 @@ $(window).load(function(){
 		}, 2000);
 	});
 
-	var sct1Sl = new Swiper('.sct1 .swiper-container',{
+	let sct1Sl = new Swiper('.sct1 .swiper-container',{
 		nextButton: '.sct1 .swiper-button-next',
 		prevButton: '.sct1 .swiper-button-prev',
 		speed:500,
@@ -76,7 +76,7 @@ $(window).load(function(){
 		$(this).colorbox();
 	});
 	
-	var sl3 = new Swiper('.sct3 .swiper-container',{
+	let sl3 = new Swiper('.sct3 .swiper-container',{
 		pagination: ".sct3 .swiper-pagination",
 		nextButton: '.sct3 .swiper-next',
 		prevButton: '.sct3 .swiper-prev',
@@ -87,8 +87,6 @@ $(window).load(function(){
 		autoplay:2500,
 		slidesPerView : 'auto'
 	});
-	console.log(11111111);
-	console.log(sl3);
 
 	$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
@@ -107,9 +105,6 @@ $(window).load(function(){
 		autoplay:2500,
 		slidesPerView : 'auto'
 	});
-	console.log(2222222222);
-	console.log(sl4);
-	console.log("sl4" + sl4);
 
 	(() => {
 		let tmp = 18; //초기값
