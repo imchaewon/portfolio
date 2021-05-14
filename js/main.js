@@ -87,6 +87,7 @@ $(window).load(function(){
 		autoplay:2500,
 		slidesPerView : 'auto'
 	});
+	console.log(sl3);
 
 	$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
@@ -105,6 +106,7 @@ $(window).load(function(){
 		autoplay:2500,
 		slidesPerView : 'auto'
 	});
+	console.log(sl4);
 
 	(() => {
 		let tmp = 18; //초기값
