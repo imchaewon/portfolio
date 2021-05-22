@@ -47,7 +47,7 @@ $(window).load(function(){
 
 	$(".sct2 .bubble").mouseenter(function(){
 		$(this).css("display","none");
-		$(".about1").delay(300).animate({"left":100,"top":256,"margin-left":0,"opacity":1},400);
+		$(".about1").delay(300).animate({"left":100,"margin-left":0,"opacity":1},400);
 		$(".about2").delay(0).animate({"top":100,"opacity":1},400);
 		$(".about3").delay(50).animate({"right":100,"margin-right":0,"opacity":1},400,function(){
 			for (let i=1;i<=5;i++){

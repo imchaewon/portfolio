@@ -164,7 +164,7 @@ transition:7s;}
 .sctSlide h2{text-align:center;font-size:1.88rem;color:#666;font-weight:bold;padding:1.3em 0;}
 .sctSlide .wrap{display:flex;position:absolute;left:0;right:0;top:13%;bottom:9%;align-items:center;}
 .sctSlide .swiper-container{width:92%;max-width:100vh;}
-.sctSlide ul{font-size:0;margin:-.5rem}
+.sctSlide ul{font-size:0;}
 .sctSlide ul li{display:inline-block;width:20%;position:relative;padding:.5rem;box-sizing:border-box;}
 .sctSlide ul li .con{position:relative;border:.1rem solid #ddd;padding-top:100%;}
 .sctSlide ul li a{position:absolute;left:0;top:0;right:0;bottom:0;}
