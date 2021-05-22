@@ -94,7 +94,7 @@
 	</div>
 	<div class="sct2">
 		<div class="header">
-			<h1><a href="javascript:;"><img src="images/logo2.png" class="p0"></a></h1>
+			<h1><a href="javascript:;"><img src="images/logo.png" class="p0"></a></h1>
 			<ul class="gnb">
 				<li><a href="javascript:;" class="p1">Profile</a></li>
 				<li><a href="javascript:;" class="p2">Ps & Ai</a></li>
@@ -102,7 +102,7 @@
 			</ul>
 			<ul class="gnb">
 				<li><a href="javascript:;" class="p5">Contact me</a></li>
-				<li><a href="javascript:;">New Portfolio</a></li>
+				<li><a href="/portfolio2/" target="blank">New Portfolio</a></li>
 			</ul>
 		</div>
 		<div class="bubble">
@@ -123,7 +123,7 @@
 				bbq019@naver.com<br>
 				<br>
 				포트폴리오2<br>
-				<a href="javascript:;">http://icw2lang.cafe24.com/pf2/index.html</a></p>
+				<a href="/portfolio2/">https://imchaewon.github.io/portfolio2/</a></p>
 			</div>
 			<div class="about3">
 				<div class="skill_wrap">
@@ -198,7 +198,7 @@
 			<h2>Photoshop Gallery</h2>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-							
+					
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
@@ -387,21 +387,26 @@ function startLoadFile(){
 //JSON 포멧 데이터 처리
 function createImages(objImageInfo) {
 	var images = objImageInfo.images;
-	var strDOM = "";
+	var str = "";
 	for (var i = 0; i < images.length; i++) {
 		
-		// N번째 이미지 정보를 구하기
-		var image = images[i];
+		str += '<ul class="swiper-slide">';
+		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
-		// N번째 이미지 패널을 생성
-		strDOM += '<div class="image_panel">';
-		strDOM += '	<img src="' + image.url + '">';
-		strDOM += '		<p class="title">' + image.title + '</p>';
-		strDOM += '</div>';
+			// N번째 이미지 정보를 구하기
+			var image = images[i];
+			
+			// N번째 이미지 패널을 생성
+			str += '<li><div class="con cutImgBox">';
+			str += '	<a href="' + image.url + '"><img src="' + image.url + '"><h3>' + image.title + '</h3></a>';
+			str += '</div></li>';
+			
+		}
+		str += '</ul>';
 	}
 	// 이미지 컨테이너에 생성한 이미지 패널들을 추가하기
-	var $imageContainer = $(".sct3");
-	$imageContainer.append(strDOM);
+	var $imageContainer = $(".sct3 .swiper-wrapper");
+	$imageContainer.append(str);
 }
 	
 </script>
