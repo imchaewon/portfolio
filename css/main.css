@@ -58,7 +58,7 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
 .headerF .header_inner .gnb li{display:inline-block;height:1rem;border-left:solid .1rem #ddd;line-height:.75rem;text-align:center;margin-left:0.62rem;padding-left:0.62rem;}
 .headerF .header_inner .gnb li:first-child{border-left:none;margin-left:0;padding-left:0;}
 .headerF .header_inner .gnb li a{font-size:1.5rem;color:#fff;padding:0.62rem 1.25rem;border:solid .15rem rgba(0,0,0,0);font-family:'PT Serif',serif;font-style:italic;font-weight:bold;position:relative;}
-.headerF .header_inner .gnb li a:after{content:"";position:absolute;left:-0.62rem;right:-0.62rem;top:-0.62rem;bottom:-0.62rem;border:dashed .12rem skyblue;border-radius:0.62rem;color:#fff;transition:all .5s;opacity:0;}
+.headerF .header_inner .gnb li a:after{content:"";position:absolute;left:-0.62rem;right:-0.62rem;top:-0.62rem;bottom:-0.62rem;border:dashed .12rem tomato;border-radius:0.62rem;color:#fff;transition:all .5s;opacity:0;}
 .headerF .header_inner .gnb li a:hover:after{margin:0.62rem;opacity:.6;}
 
 .section>div{height:100vh;padding-top:6rem;}
@@ -71,7 +71,7 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
 .sct1 .txt p{font-size:1.25rem;color:#fff;line-height:1rem;line-height:1.87rem;font-family:'Yeon Sung',cursive;}
 .sct1 .p1 .txt p{font-size:2.5rem;line-height:3.75rem;letter-spacing:.12rem;font-weight:bold;}
 .sct1 .p1 .txt p span{vertical-align:middle;}
-.sct1 .p1 .txt .emt{display:inline-block;width:1.8rem;height:2rem;border-radius:50%;border:solid black .2rem;margin-left:.3rem;background-color:greenyellow;font-size:1rem;line-height:initial;text-align:initial;color:initial;}
+.sct1 .p1 .txt .emt{display:inline-block;width:1.8rem;height:2rem;border-radius:50%;border:solid black .2rem;margin-left:.3rem;background:#b296c6;font-size:1rem;line-height:initial;text-align:initial;color:initial;}
 .sct1 .p1 .txt .emt:after{content:'👀';}
 .sct1 .p2 .txt p{font-style:italic;}
 .sct1 .p2 .txt p:nth-of-type(2){font-size:1.18rem;}
