@@ -35,7 +35,7 @@ $(window).load(function(){
 		}, 2000);
 	});
 
-	let sct1Sl = new Swiper('.sct1 .swiper-container',{
+	const sct1Sl = new Swiper('.sct1 .swiper-container',{
 		nextButton: '.sct1 .swiper-button-next',
 		prevButton: '.sct1 .swiper-button-prev',
 		speed:500,
@@ -79,7 +79,7 @@ $(window).load(function(){
 	});
 	
 	
-	let sl3 = new Swiper('.sct3 .swiper-container',{
+	const sl3 = new Swiper('.sct3 .swiper-container',{
 		pagination: ".sct3 .swiper-pagination",
 		nextButton: '.sct3 .swiper-next',
 		prevButton: '.sct3 .swiper-prev',
@@ -96,7 +96,7 @@ $(window).load(function(){
 		overlayOpacity: 0.6
 	});
 
-	let sl4 = new Swiper('.sct4 .swiper-container',{
+	const sl4 = new Swiper('.sct4 .swiper-container',{
 		pagination: ".sct4 .swiper-pagination",
 		nextButton: '.sct4 .swiper-next',
 		prevButton: '.sct4 .swiper-prev',
@@ -228,12 +228,7 @@ function startLoadFile(){
 function createImages(objImageInfo) {
 	var images = objImageInfo.images;
 	var str = "";
-	console.log(images.length / 15);
-	console.log(images.length*1 / 15 );
-	console.log(parseInt(images.length) / 15);
-	console.log(parseInt(images.length / 15));
-	console.log(parseInt(parseInt(images.length) / 15));
-	for (var i = 0; i < images.length / 15; i++) {
+	for (var i = 0; i < parseInt(images.length / 15); i++) {
 		
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
