@@ -92,6 +92,8 @@ $(window).load(function(){
 		overlayBgColor:"skyblue",
 		overlayOpacity: 0.6
 	});
+	
+	startLoadFile();
 
 	let sl4 = new Swiper('.sct4 .swiper-container',{
 		pagination: ".sct4 .swiper-pagination",
@@ -204,10 +206,59 @@ $(window).scroll(function(){
 	else
 		$(".sct2 .header").removeClass("on");
 
-
-
-
 });
+
+
+function startLoadFile(){
+	$.ajax({
+		url: 'js/images.json',
+		type: 'GET',
+		dataType : 'json',
+		success : function(data){
+			createImages(data);
+		},
+		error : function(a, b, c) {
+			console.log(a, b, c);
+		}
+	});
+}
+
+//JSON 포멧 데이터 처리
+function createImages(objImageInfo) {
+	var images = objImageInfo.images;
+	var str = "";
+	console.log(images.length / 15);
+	console.log(images.length*1 / 15 );
+	console.log(parseInt(images.length) / 15);
+	console.log(parseInt(images.length / 15));
+	console.log(parseInt(parseInt(images.length) / 15));
+	for (var i = 0; i < images.length / 15; i++) {
+		
+		str += '<ul class="swiper-slide">';
+		for(var j=1;j<=15;j++){ //15개씩 자르기
+		
+			// N번째 이미지 정보를 구하기
+			var image = images[i];
+			
+			// N번째 이미지 패널을 생성
+			str += '<li><div class="con cutImgBox">';
+			str += '	<a href="' + image.url + '"><img src="' + image.url + '"><h3>' + image.title + '</h3></a>';
+			str += '</div></li>';
+			
+		}
+		str += '</ul>';
+	}
+	// 이미지 컨테이너에 생성한 이미지 패널들을 추가하기
+	var $imageContainer = $(".sct3 .swiper-wrapper");
+	$imageContainer.append(str);
+}
+
+
+
+
+
+
+
 
 
 

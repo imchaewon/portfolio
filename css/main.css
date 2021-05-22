@@ -121,7 +121,7 @@ transition:7s;}
 .sct2 .bubble{width:13rem;height:6rem;background:maroon;transform-origin:1.87rem 1.87rem;animation:square-to-circle 2s 1s linear infinite;transition:all 1s;position:absolute;right:-50%;top:50%;margin:-2.8rem -6.25rem 0 0;z-index:10;overflow:hidden;}
 .sct2 .bubble.on{right:50%;}
 .sct2 .bubble:before{content:"";position:absolute;right:-1.25rem;top:-1rem;width:2rem;border-right:transparent 0.43rem solid;border-left:transparent 0.62rem solid;border-top:#222 2.25rem solid;transform:rotate(74deg);}
-.sct2 .bubble:after{content:"";position:absolute;right:-1.37rem;top:-1.5rem;width:2.5rem;height:2.5rem;background:#333;transform:rotate(43deg);}
+.sct2 .bubble:after{content:"";position:absolute;right:-1.37rem;top:-1.5rem;width:2.5rem;height:2.5rem;background:#666;transform:rotate(43deg);}
 .sct2 .bubble h2{font-size:1.75rem;color:#fff;font-weight:bold;text-align:center;padding-top:.5rem;line-height:1.5rem;}
 .sct2 .bubble span{font-size:1.5rem;line-height:1.5rem;}
 .sct2 .box{width:75rem;height:37.5rem;position:absolute;left:50%;top:50%;margin:-18.75rem 0 0 -37.5rem;}
