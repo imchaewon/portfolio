@@ -78,8 +78,7 @@ $(window).load(function(){
 		$(this).colorbox();
 	});
 	
-	
-	const sl3 = new Swiper('.sct3 .swiper-container',{
+	/*const sl3 = new Swiper('.sct3 .swiper-container',{
 		pagination: ".sct3 .swiper-pagination",
 		nextButton: '.sct3 .swiper-next',
 		prevButton: '.sct3 .swiper-prev',
@@ -89,7 +88,7 @@ $(window).load(function(){
 		autoplayDisableOnInteraction:false,
 		autoplay:2500,
 		slidesPerView : 'auto'
-	});
+	});*/
 
 	$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
