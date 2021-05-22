@@ -72,19 +72,7 @@ $(window).load(function(){
 		$(".about4").delay(150).animate({"bottom":0,"margin-right":0,"opacity":1},400);
 	});
 
-	startLoadFile(function(){
-		const sl3 = new Swiper('.sct3 .swiper-container',{
-			pagination: ".sct3 .swiper-pagination",
-			nextButton: '.sct3 .swiper-next',
-			prevButton: '.sct3 .swiper-prev',
-			speed:500,
-			loop:true,
-			paginationClickable:true,
-			autoplayDisableOnInteraction:false,
-			autoplay:2500,
-			slidesPerView : 'auto'
-		});
-	});
+	startLoadFile();
 	
 	$(".sct3 li a").each(function(){
 		$(this).colorbox();
@@ -220,6 +208,18 @@ function startLoadFile(){
 		error : function(a, b, c) {
 			console.log(a, b, c);
 		}
+	},function(){
+		const sl3 = new Swiper('.sct3 .swiper-container',{
+			pagination: ".sct3 .swiper-pagination",
+			nextButton: '.sct3 .swiper-next',
+			prevButton: '.sct3 .swiper-prev',
+			speed:500,
+			loop:true,
+			paginationClickable:true,
+			autoplayDisableOnInteraction:false,
+			autoplay:2500,
+			slidesPerView : 'auto'
+		});
 	});
 }
 
