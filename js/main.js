@@ -228,13 +228,13 @@ function startLoadFile(){
 function createImages(objImageInfo) {
 	var images = objImageInfo.images;
 	var str = "";
-	for (var i = 0; i < parseInt(images.length / 15); i++) {
+	for (var i = 1; i <= parseInt(images.length / 15); i++) {
 		
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
 			// N번째 이미지 정보를 구하기
-			var image = images[i];
+			var image = images[i*j];
 			
 			// N번째 이미지 패널을 생성
 			str += '<li><div class="con cutImgBox">';
