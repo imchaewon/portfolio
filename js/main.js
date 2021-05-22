@@ -72,9 +72,12 @@ $(window).load(function(){
 		$(".about4").delay(150).animate({"bottom":0,"margin-right":0,"opacity":1},400);
 	});
 
+	startLoadFile();
+	
 	$(".sct3 li a").each(function(){
 		$(this).colorbox();
 	});
+	
 	
 	let sl3 = new Swiper('.sct3 .swiper-container',{
 		pagination: ".sct3 .swiper-pagination",
@@ -92,8 +95,6 @@ $(window).load(function(){
 		overlayBgColor:"skyblue",
 		overlayOpacity: 0.6
 	});
-	
-	startLoadFile();
 
 	let sl4 = new Swiper('.sct4 .swiper-container',{
 		pagination: ".sct4 .swiper-pagination",
