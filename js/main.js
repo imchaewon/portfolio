@@ -78,17 +78,19 @@ $(window).load(function(){
 		$(this).colorbox();
 	});
 	
-	/*const sl3 = new Swiper('.sct3 .swiper-container',{
-		pagination: ".sct3 .swiper-pagination",
-		nextButton: '.sct3 .swiper-next',
-		prevButton: '.sct3 .swiper-prev',
-		speed:500,
-		loop:true,
-		paginationClickable:true,
-		autoplayDisableOnInteraction:false,
-		autoplay:2500,
-		slidesPerView : 'auto'
-	});*/
+	setTimeout(function(){
+		const sl3 = new Swiper('.sct3 .swiper-container',{
+			pagination: ".sct3 .swiper-pagination",
+			nextButton: '.sct3 .swiper-next',
+			prevButton: '.sct3 .swiper-prev',
+			speed:500,
+			loop:true,
+			paginationClickable:true,
+			autoplayDisableOnInteraction:false,
+			autoplay:2500,
+			slidesPerView : 'auto'
+		});
+	},0);
 
 	$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
