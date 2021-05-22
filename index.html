@@ -38,6 +38,7 @@
 		<source src="images/video.mp4">
 	</video> -->
 	<div class="page">
+		<div class="help"><img src="images/ico_help.png"></div>
 		<ul class="btn_page">
 			<li class="btn1 on">1</li>
 			<li class="btn2">2</li>
@@ -54,8 +55,6 @@
 			<li>web<span>→</span></li>
 			<li>cont<span>→</span></li>
 		</ul>
-		<div style="clear:both"></div>
-		<div class="help"><img src="images/ico_help.png"></div>
 	</div>
 	<div class="headerF">
 		<div class="header_inner">
@@ -65,7 +64,7 @@
 				<li><a href="javascript:;" class="p2">Ps & Ai</a></li>
 				<li><a href="javascript:;" class="p4">Web Design</a></li>
 				<li><a href="javascript:;" class="p5">Contact me</a></li>
-				<li><a href="javascript:;">New Portfolio</a></li>
+				<li><a href="https://m.icw2lang.cafe24.com/pf2test/">New Portfolio</a></li>
 			</ul>
 		</div>
 	</div>
@@ -190,6 +189,7 @@
 				</div>
 			</div>
 		</div>
+		<a href="javascript:;" id="sct3"></a>
 		<div class="sct3 sctSlide">
 			<div class="screen">
 				<div class="bg"></div>
@@ -314,6 +314,7 @@
 				<div class="swiper-prev"></div>
 			</div>
 		</div>
+		<a href="javascript:;" id="sct4"></a>
 		<div class="sct4 sctSlide">
 			<div class="screen">
 				<div class="bg"></div>
@@ -384,6 +385,7 @@
 				<div class="swiper-prev"></div>
 			</div>
 		</div>
+		<a href="javascript:;" id="sct5"></a>
 		<div class="sct5">
 			<div class="tit">
 				<h2>HTML5 + CSS3</h2>
@@ -468,6 +470,32 @@
 			</div>
 		</div>
 	</div>
+
+
+	<!-- <script type="text/javascript">
+		$(window).on("load",function(){
+			console.log(1123);
+			$.ajax({
+				type : "POST",
+				url : "/sybang/admin2/config_site_data.do",
+				data : "id=" + $(this).val(),
+				success : function(result) {
+					rs = result;
+					if (result == 0){
+						$("#checkID").text("※ 사용 가능한 아이디입니다.").css("color","blue");
+						$("#result").text("");
+					}else{
+						$("#checkID").text("※ 사용 불가능한 아이디입니다.").css("color","red");
+					}
+				},
+				error : function(a, b, c) {
+					console.log(a, b, c);
+				}
+			});
+		});
+	</script> -->
+
+
 </body>
 </html>
 

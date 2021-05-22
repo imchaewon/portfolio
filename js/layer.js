@@ -1,10 +1,10 @@
 function layerFix(s1,fIdx){
-	var lyr = $(".layerFix")
-	var lbtn = $(".openLayerFix")
-	var lcon = lyr.find(".layerConWrap")
-	var lw = lcon.outerWidth()
-	var lh = lcon.outerHeight()
-	var cnt = 1
+	var lyr=$(".layerFix")
+	var lbtn=$(".openLayerFix")
+	var lcon=lyr.find(".layerConWrap")
+	var lw=lcon.outerWidth()
+	var lh=lcon.outerHeight()
+	var cnt=1
 	var open=function(chk,get){
 		if(chk==true){
 			var lyr=$(".layerFix[idxLyr="+get+"]")
