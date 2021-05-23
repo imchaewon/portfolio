@@ -238,16 +238,23 @@ document.addEventListener("DOMContentLoaded", function() {
 	var lazyloadImages;		
 
 	if ("IntersectionObserver" in window) {
+		console.log(1);
 		lazyloadImages = document.querySelectorAll(".lazy");
+		console.log(2);
 		var imageObserver = new IntersectionObserver(function(entries, observer) {
+			console.log(3);
 			entries.forEach(function(entry) {
+				console.log(4);
 				if (entry.isIntersecting) {
+					console.log(5);
 					var image = entry.target;
 					image.src = image.dataset.src;
 					image.classList.remove("lazy");
 					imageObserver.unobserve(image);
 					
+					console.log(6);
 					setTimeout(function(){
+						console.log(7);
 						cutImgBox();			
 					},0)
 				}
@@ -255,36 +262,46 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 
 		lazyloadImages.forEach(function(image) {
+			console.log(8);
 			imageObserver.observe(image);
 		});
 	} else {
+		console.log(9);
 		var lazyloadThrottleTimeout;
 		lazyloadImages = document.querySelectorAll(".lazy");
+		console.log(10);
 		
 		function lazyload () {
+			console.log(11);
 			if(lazyloadThrottleTimeout) {
+				console.log(12);
 				clearTimeout(lazyloadThrottleTimeout);
 			}		
 
 			lazyloadThrottleTimeout = setTimeout(function() {
+				console.log(13);
 				var scrollTop = window.pageYOffset;
 				lazyloadImages.forEach(function(img) {
+					console.log(14);
 						if(img.offsetTop < (window.innerHeight + scrollTop)) {
+							console.log(15);
 							img.src = img.dataset.src;
 							img.classList.remove('lazy');
 						}
 				});
-				if(lazyloadImages.length == 0) { 
+				if(lazyloadImages.length == 0) {
+					console.log(15); 
 					document.removeEventListener("scroll", lazyload);
 					window.removeEventListener("resize", lazyload);
 					window.removeEventListener("orientationChange", lazyload);
 				}
 			}, 20);
 		}
-
+console.log(16);
 		document.addEventListener("scroll", lazyload);
 		window.addEventListener("resize", lazyload);
 		window.addEventListener("orientationChange", lazyload);
+		console.log(17);
 	}
 });
 
