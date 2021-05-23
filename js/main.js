@@ -74,24 +74,6 @@ $(window).load(function(){
 
 	startLoadFile();
 
-	/*$(".sct4 li a").lightBox({
-		overlayBgColor:"skyblue",
-		overlayOpacity: 0.6
-	});
-
-	const sl4 = new Swiper('.sct4 .swiper-container',{
-		pagination: ".sct4 .swiper-pagination",
-		nextButton: '.sct4 .swiper-next',
-		prevButton: '.sct4 .swiper-prev',
-		speed:500,
-		loop:true,
-		paginationClickable:true,
-		paginationType : 'fraction',
-		autoplayDisableOnInteraction:false,
-		autoplay:2500,
-		slidesPerView : 'auto'
-	});*/
-
 	(() => {
 		let tmp = 18; //초기값
 		$('.sct5 .conWrap .tit li').click(function(e){
@@ -206,6 +188,24 @@ $(document).ajaxStop(function() {
 		speed:500,
 		loop:true,
 		paginationClickable:true,
+		autoplayDisableOnInteraction:false,
+		autoplay:2500,
+		slidesPerView : 'auto'
+	});
+	
+	$(".sct4 li a").lightBox({
+		overlayBgColor:"skyblue",
+		overlayOpacity: 0.6
+	});
+
+	const sl4 = new Swiper('.sct4 .swiper-container',{
+		pagination: ".sct4 .swiper-pagination",
+		nextButton: '.sct4 .swiper-next',
+		prevButton: '.sct4 .swiper-prev',
+		speed:500,
+		loop:true,
+		paginationClickable:true,
+		paginationType : 'fraction',
 		autoplayDisableOnInteraction:false,
 		autoplay:2500,
 		slidesPerView : 'auto'
