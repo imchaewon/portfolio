@@ -208,7 +208,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 
 .sct5 .conWrap .tit{position:absolute;top:0;bottom:-5.5rem;left:-7rem;right:-7rem;z-index:0;}
 .sct5 .conWrap .tit>ul{font-size:0;position:absolute;top:0;text-align:center;}
-.sct5 .conWrap .tit li{display:flex;width:6rem;height:4rem;margin:1rem 0;border-radius:0.6rem;background:pink;cursor:pointer;line-height:4rem;font-weight:bold;letter-spacing:-0..31rem;color:#666;font-size:1rem;position:relative;align-items:center;justify-content:center;}
+.sct5 .conWrap .tit li{display:flex;width:6rem;height:4rem;margin:1rem 0;border-radius:0.6rem;background:pink;cursor:pointer;line-height:4rem;font-weight:bold;letter-spacing:-.31rem;color:#666;font-size:1rem;position:relative;align-items:center;justify-content:center;}
 .sct5 .conWrap .tit li h3{line-height:1.4rem;}
 .sct5 .conWrap .tit li h4{display:none;font-size:1rem;font-weight:normal;color:#fff;}
 .sct5 .conWrap .tit .lft{left:0;}
