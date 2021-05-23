@@ -101,17 +101,19 @@ $(window).load(function(){
 	},1000);
 
 	$(".sct5 .con").mouseenter(function(){
-		alert(111)
 		sw = 1;
 	});
 	$(".sct5 .con").mouseleave(function(){
-		alert(222);
 		sw = 0;
 	});
 			
 	$(".section").each(function(){
 		// 개별적으로 Wheel 이벤트 적용
 		$(this).children().on("mousewheel DOMMouseScroll", function(e) {
+			if(sw == 1){
+				console.log(123123);
+				return;
+			}
 			e.preventDefault();
 			let delta = 0;
 			if (!event) event = window.event;
