@@ -243,7 +243,7 @@ function createImages(objImageInfo) {
 			console.log(image);
 			if(image==null || image==undefined || image==""){
 				console.log(123123123);
-				return;
+				break;
 			}
 			
 			// N번째 이미지 패널을 생성
