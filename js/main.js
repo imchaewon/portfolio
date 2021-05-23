@@ -193,6 +193,9 @@ $(window).scroll(function(){
 });
 
 $(".sct3 .swiper-wrapper").ajaxSuccess(function(){
+	
+	console.log(11111);
+	
 	$(".sct3 li a").each(function(){
 		$(this).colorbox();
 	});
