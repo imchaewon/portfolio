@@ -240,6 +240,7 @@ function createImages(objImageInfo) {
 			// N번째 이미지 정보를 구하기
 			var image = images[i*j];
 			
+			console.log(i*j);
 			console.log(image);
 			if(image[i]==null || image[i]==undefined || image[i]==""){
 				return;
