@@ -177,6 +177,7 @@ $(window).scroll(function(){
 
 
 $(document).ajaxStop(function() {
+	console.log(111);
 	$(".sct3 li a").each(function(){
 		$(this).colorbox();
 	});
@@ -193,6 +194,7 @@ $(document).ajaxStop(function() {
 		slidesPerView : 'auto'
 	});
 	
+	console.log(222);
 	$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
 		overlayOpacity: 0.6
