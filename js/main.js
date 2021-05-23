@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					
 					setTimeout(function(){
 						cutImgBox();
-					},1000)
+					},100)
 				}
 			});
 		});
