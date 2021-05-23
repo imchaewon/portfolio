@@ -139,7 +139,7 @@ $(window).load(function(){
 		});
 	});
 	
-	$(".conWrap").scroll(function(){
+	$(".sct5 .con").scroll(function(){
 		console.log(22222222);
 	});
 });
