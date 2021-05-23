@@ -233,7 +233,7 @@ function startLoadFile(){
 function createImages(objImageInfo) {
 	var images = objImageInfo.images;
 	var str = "";
-	for (var i = 0; i <= parseInt(images.length / 15) + 1; i++) {
+	$out:for (var i = 0; i <= parseInt(images.length / 15) + 1; i++) {
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
@@ -243,7 +243,7 @@ function createImages(objImageInfo) {
 			console.log(image);
 			if(image==null || image==undefined || image==""){
 				console.log(123123123);
-				break;
+				break $out;
 			}
 			
 			// N번째 이미지 패널을 생성
