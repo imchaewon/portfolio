@@ -295,8 +295,10 @@ function startLoadFile(){
 function createImages_ps(objImageInfo) {
 	var images = objImageInfo.imgs_ps;
 	var str = "";
-	$out:for (var i = 0; i <= parseInt(images.length / 15); i++) {
-		if(i == images.length && parseInt(images.length / 15) == 0){
+	var m = parseInt(images.length / 15);
+	var n = parseInt(images.length % 15);
+	$out:for (var i = 0; i <= m; i++) {
+		if(n == 0 && i == m){
 			break;
 		}
 		str += '<ul class="swiper-slide">';
@@ -326,10 +328,10 @@ function createImages_ps(objImageInfo) {
 function createImages_ai(objImageInfo) {
 	var images = objImageInfo.imgs_ai;
 	var str = "";
-	$out:for (var i = 0; i <= parseInt(images.length / 15); i++) {
-		console.log(i)
-		if(i == images.length && parseInt(images.length / 15) == 0){
-			console.log(123123123);
+	var m = parseInt(images.length / 15);
+	var n = parseInt(images.length % 15);
+	$out:for (var i = 0; i <= m; i++) {
+		if(n == 0 && i == m){
 			break;
 		}
 		str += '<ul class="swiper-slide">';
