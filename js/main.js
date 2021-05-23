@@ -132,12 +132,6 @@ $(window).load(function(){
 	});
 });
 
-$(".sct5 .con").mouseenter(function(){
-	$(window).scroll(function(){
-		console.log(111111);
-	});
-});
-
 $(window).scroll(function(){
 	
 	$(".sct5 .con").mouseenter(function(){
@@ -184,7 +178,6 @@ $(window).scroll(function(){
 		$(".sct2 .header").removeClass("on");
 
 });
-
 
 $(document).ajaxStop(function() {
 	$(".sct3 li a").each(function(){
@@ -302,7 +295,7 @@ function startLoadFile(){
 function createImages_ps(objImageInfo) {
 	var images = objImageInfo.imgs_ps;
 	var str = "";
-	$out:for (var i = 0; i <= parseInt(images.length / 15) + 1; i++) {
+	$out:for (var i = 0; i <= parseInt(images.length / 15); i++) {
 		if(i == images.length && parseInt(images.length / 15) == 0){
 			break;
 		}
