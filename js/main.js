@@ -91,6 +91,8 @@ $(window).load(function(){
 		var sw = 0;
 	
 		$(".sct5 .con > ul").mouseenter(function(){
+			console.log(this);
+			console.log($(this));
 			sw = 1;
 		});
 		$(".sct5 .con > ul").mouseleave(function(){
@@ -101,8 +103,6 @@ $(window).load(function(){
 			// 개별적으로 Wheel 이벤트 적용
 			$(this).children().on("mousewheel DOMMouseScroll", function(e) {
 				if(sw == 1){
-					console.log(this);
-					console.log($(this));
 					return;
 				}
 				e.preventDefault();
