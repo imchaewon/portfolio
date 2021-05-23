@@ -97,6 +97,7 @@ $(window).load(function(){
 		});
 		$(".sct5 .con > ul > li").mouseleave(function(){
 			sw = 0;
+			t.removeClass("hide");
 		});
 				
 		$(".section").each(function(){
