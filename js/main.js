@@ -217,6 +217,10 @@ $(".sct3 .swiper-slide").ajaxSuccess(function(){
 	console.log(22222);
 });
 
+$(document).ajaxStop(function() {
+	console.log(33333);
+});
+
 function startLoadFile(){
 	$.ajax({
 		url: 'js/images.json',
