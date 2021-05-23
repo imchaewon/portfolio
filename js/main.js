@@ -100,6 +100,15 @@ $(window).load(function(){
 		console.log(sw);
 	},1000);
 
+	$(".sct5 .con").mouseenter(function(){
+		alert(111)
+		sw = 1;
+	});
+	$(".sct5 .con").mouseleave(function(){
+		alert(222);
+		sw = 0;
+	});
+			
 	$(".section").each(function(){
 		// 개별적으로 Wheel 이벤트 적용
 		$(this).children().on("mousewheel DOMMouseScroll", function(e) {
@@ -115,14 +124,6 @@ $(window).load(function(){
 				delta = -event.detail / 3;
 			}
 			let moveTop = null;
-			$(".sct5 .con").mouseenter(function(){
-				alert(111)
-				sw = 1;
-			});
-			$(".sct5 .con").mouseleave(function(){
-				alert(222);
-				sw = 0;
-			});
 			if(sw = 1){
 				return;
 			}
