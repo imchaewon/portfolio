@@ -73,6 +73,14 @@ $(window).load(function(){
 	});
 
 	startLoadFile();
+	
+	$(".sct3 li a").each(function(){
+		$(this).colorbox();
+	});
+	$(".sct4 li a").lightBox({
+		overlayBgColor:"skyblue",
+		overlayOpacity: 0.6
+	});
 
 	(() => {
 		let tmp = 18; //초기값
@@ -180,9 +188,7 @@ $(window).scroll(function(){
 });
 
 $(document).ajaxStop(function() {
-	$(".sct3 li a").each(function(){
-		$(this).colorbox();
-	});
+	
 	
 	const sl3 = new Swiper('.sct3 .swiper-container',{
 		pagination: ".sct3 .swiper-pagination",
@@ -196,10 +202,7 @@ $(document).ajaxStop(function() {
 		slidesPerView : 'auto'
 	});
 	
-	$(".sct4 li a").lightBox({
-		overlayBgColor:"skyblue",
-		overlayOpacity: 0.6
-	});
+	
 
 	const sl4 = new Swiper('.sct4 .swiper-container',{
 		pagination: ".sct4 .swiper-pagination",
