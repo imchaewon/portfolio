@@ -139,10 +139,8 @@ $(window).load(function(){
 		});
 	});
 	
-	$(".conWrap").on("mouseenter",function(){
-		$(window).scroll(function(){
-			console.log(22222222);
-		});
+	$(".conWrap").scroll(function(){
+		console.log(22222222);
 	});
 });
 
