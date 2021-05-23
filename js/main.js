@@ -240,9 +240,8 @@ function createImages(objImageInfo) {
 			// N번째 이미지 정보를 구하기
 			var image = images[i * 15 + j - 1];
 			
-			console.log(image);
+			//객체가 없을시 탈출
 			if(image==null || image==undefined || image==""){
-				console.log(123123123);
 				break $out;
 			}
 			
