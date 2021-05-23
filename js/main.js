@@ -122,7 +122,7 @@ $(window).load(function(){
 				sw = 0;
 			});
 			if(sw = 1){
-				return;
+				return;;
 			}
 			if (delta < 0) { // 마우스휠을 위에서 아래로
 				if ($(this).next() != undefined && $(this).next().offset() != undefined) {
