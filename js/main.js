@@ -73,10 +73,6 @@ $(window).load(function(){
 	});
 
 	startLoadFile();
-	
-	$(".sct3 li a").each(function(){
-		$(this).colorbox();
-	});
 
 	$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
@@ -196,6 +192,23 @@ $(window).scroll(function(){
 
 });
 
+$(".sct3 .swiper-wrapper").ready(function(){
+	$(".sct3 li a").each(function(){
+		$(this).colorbox();
+	});
+	
+	const sl3 = new Swiper('.sct3 .swiper-container',{
+		pagination: ".sct3 .swiper-pagination",
+		nextButton: '.sct3 .swiper-next',
+		prevButton: '.sct3 .swiper-prev',
+		speed:500,
+		loop:true,
+		paginationClickable:true,
+		autoplayDisableOnInteraction:false,
+		autoplay:2500,
+		slidesPerView : 'auto'
+	});
+});
 
 function startLoadFile(){
 	$.ajax({
@@ -208,18 +221,6 @@ function startLoadFile(){
 		error : function(a, b, c) {
 			console.log(a, b, c);
 		}
-	},function(){
-		const sl3 = new Swiper('.sct3 .swiper-container',{
-			pagination: ".sct3 .swiper-pagination",
-			nextButton: '.sct3 .swiper-next',
-			prevButton: '.sct3 .swiper-prev',
-			speed:500,
-			loop:true,
-			paginationClickable:true,
-			autoplayDisableOnInteraction:false,
-			autoplay:2500,
-			slidesPerView : 'auto'
-		});
 	});
 }
 
