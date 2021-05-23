@@ -92,7 +92,7 @@ $(window).load(function(){
 		var t = null;
 	
 		$(".sct5 .con > ul > li").mouseenter(function(){
-			t = this;
+			t = $(this);
 			sw = 1;
 		});
 		$(".sct5 .con > ul > li").mouseleave(function(){
@@ -103,7 +103,7 @@ $(window).load(function(){
 			// 개별적으로 Wheel 이벤트 적용
 			$(this).children().on("mousewheel DOMMouseScroll", function(e) {
 				if(sw == 1){
-					t[0].addClass("hide");
+					t.addClass("hide");
 					return;
 				}
 				e.preventDefault();
