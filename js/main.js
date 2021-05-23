@@ -242,7 +242,7 @@ function createImages(objImageInfo) {
 			
 			console.log(i*j - 1);
 			console.log(image);
-			if(image[i]==null || image[i]==undefined || image[i]==""){
+			if(image==null || image==undefined || image==""){
 				return;
 			}
 			
