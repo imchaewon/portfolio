@@ -74,7 +74,7 @@ $(window).load(function(){
 
 	startLoadFile();
 
-	/*$(".sct4 li a").lightBox({
+	$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
 		overlayOpacity: 0.6
 	});
@@ -90,7 +90,7 @@ $(window).load(function(){
 		autoplayDisableOnInteraction:false,
 		autoplay:2500,
 		slidesPerView : 'auto'
-	});*/
+	});
 
 	(() => {
 		let tmp = 18; //초기값
@@ -219,7 +219,6 @@ function startLoadFile(){
 		type: 'GET',
 		dataType : 'json',
 		success : function(data){
-			console.log(data);
 			createImages(data);
 		},
 		error : function(a, b, c) {
@@ -230,15 +229,15 @@ function startLoadFile(){
 
 //JSON 포멧 데이터 처리
 function createImages(objImageInfo) {
-	var ps = objImageInfo.ps;
+	var images = objImageInfo.images;
 	var str = "";
-	for (var i = 1; i <= parseInt(ps.length / 15) + 1; i++) { //15개씩 자르기
+	for (var i = 1; i <= parseInt(images.length / 15) + 1; i++) { //15개씩 자르기
 		
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){
 		
 			// N번째 이미지 정보를 구하기
-			var image = ps[i*j];
+			var image = images[i*j];
 			
 			// N번째 이미지 패널을 생성
 			str += '<li><div class="con cutImgBox">';
