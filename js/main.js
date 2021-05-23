@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					window.removeEventListener("resize", lazyload);
 					window.removeEventListener("orientationChange", lazyload);
 				}
-				
+				console.log(333);
 				cutImgBox();
 			}, 20);
 		}
