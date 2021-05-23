@@ -140,7 +140,7 @@ $(window).load(function(){
 	});
 });
 
-$(".sct5").mouseenter(function(){
+$(".sct5").onmouseenter(function(){
 	console.log(22222222);
 });
 
