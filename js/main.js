@@ -233,17 +233,17 @@ function startLoadFile(){
 function createImages(objImageInfo) {
 	var images = objImageInfo.images;
 	var str = "";
-	for (var i = 1; i <= parseInt(images.length / 15) + 1; i++) {
+	for (var i = 0; i <= parseInt(images.length / 15) + 1; i++) {
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
 			var image;
 			// N번째 이미지 정보를 구하기
-			if(i==1){
+			/*if(i==1){
 				image = images[i - 1];
-			}else{
+			}else{*/
 				image = images[i * 15 + j - 1];
-			}
+			/*}*/
 			
 			console.log(image);
 			if(image==null || image==undefined || image==""){
