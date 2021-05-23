@@ -73,14 +73,6 @@ $(window).load(function(){
 	});
 
 	startLoadFile();
-	
-	$(".sct3 li a").each(function(){
-		$(this).colorbox();
-	});
-	$(".sct4 li a").lightBox({
-		overlayBgColor:"skyblue",
-		overlayOpacity: 0.6
-	});
 
 	(() => {
 		let tmp = 18; //초기값
@@ -202,7 +194,6 @@ $(window).scroll(function(){
 
 $(document).ajaxStop(function() {
 	
-	
 	const sl3 = new Swiper('.sct3 .swiper-container',{
 		pagination: ".sct3 .swiper-pagination",
 		nextButton: '.sct3 .swiper-next',
@@ -215,7 +206,9 @@ $(document).ajaxStop(function() {
 		slidesPerView : 'auto'
 	});
 	
-	
+	$(".sct3 li a").each(function(){
+		$(this).colorbox();
+	});
 
 	const sl4 = new Swiper('.sct4 .swiper-container',{
 		pagination: ".sct4 .swiper-pagination",
@@ -229,6 +222,14 @@ $(document).ajaxStop(function() {
 		autoplay:2500,
 		slidesPerView : 'auto'
 	});
+	
+	$(".sct4 li a").lightBox({
+		overlayBgColor:"skyblue",
+		overlayOpacity: 0.6
+	});
+	
+	cutImgBox();
+	
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -355,34 +356,6 @@ function createImages_ai(objImageInfo) {
 		
 			// N번째 이미지 정보를 구하기
 			var image = images[i * 15 + j - 1];
-			
-			//객체가 없을시 탈출
-			if(image==null || image==undefined || image==""){
-				break $out;
-			}
-			
-			// N번째 이미지 패널을 생성
-			str += '<li><div class="con cutImgBox">';
-			str += '	<a href="' + image.url + '"><img src="' + image.url + '"><h3>' + image.title + '</h3></a>';
-			str += '</div></li>';
-			
-		}
-		str += '</ul>';
-	}
-	// 이미지 컨테이너에 생성한 이미지 패널들을 추가하기
-	var imgCon = $(".sct4 .swiper-wrapper");
-	imgCon.append(str);
-}
-
-function objImageInfo(objImageInfo) {
-	var imgs_ps = objImageInfo.imgs_ps;
-	var str = "";
-	$out:for (var i = 0; i <= parseInt(imgs_ps.length / 15); i++) {
-		str += '<ul class="swiper-slide">';
-		for(var j=1;j<=15;j++){ //15개씩 자르기
-		
-			// N번째 이미지 정보를 구하기
-			var image = imgs_ps[i * 15 + j - 1];
 			
 			//객체가 없을시 탈출
 			if(image==null || image==undefined || image==""){
