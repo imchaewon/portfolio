@@ -116,9 +116,11 @@ $(window).load(function(){
 			}
 			let moveTop = null;
 			$(".sct5 .con").mouseenter(function(){
+				alert(111)
 				sw = 1;
 			});
 			$(".sct5 .con").mouseleave(function(){
+				alert(222);
 				sw = 0;
 			});
 			if(sw = 1){
