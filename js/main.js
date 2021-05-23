@@ -74,7 +74,7 @@ $(window).load(function(){
 
 	startLoadFile();
 
-	$(".sct4 li a").lightBox({
+	/*$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
 		overlayOpacity: 0.6
 	});
@@ -90,7 +90,7 @@ $(window).load(function(){
 		autoplayDisableOnInteraction:false,
 		autoplay:2500,
 		slidesPerView : 'auto'
-	});
+	});*/
 
 	(() => {
 		let tmp = 18; //초기값
@@ -233,7 +233,7 @@ function startLoadFile(){
 function createImages(objImageInfo) {
 	var images = objImageInfo.images;
 	var str = "";
-	for (var i = 1; i <= parseInt(images.length / 15); i++) {
+	for (var i = 1; i <= parseInt(images.length / 15) + 1; i++) {
 		
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
