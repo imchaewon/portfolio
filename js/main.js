@@ -237,7 +237,7 @@ function createImages(objImageInfo) {
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
-			if(images[i]==null || images[i]==undifined){
+			if(images[i]==null || images[i]==undefined){
 				return;
 			}
 		
