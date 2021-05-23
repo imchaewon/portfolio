@@ -238,9 +238,8 @@ function createImages(objImageInfo) {
 		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
 			// N번째 이미지 정보를 구하기
-			var image = images[i * j - 1];
+			var image = images[i * 15 + j - 1];
 			
-			console.log(i*j - 1);
 			console.log(image);
 			if(image==null || image==undefined || image==""){
 				return;
