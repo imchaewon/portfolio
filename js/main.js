@@ -245,8 +245,8 @@ document.addEventListener("DOMContentLoaded", function() {
 					image.classList.remove("lazy");
 					imageObserver.unobserve(image);
 				}
-				cutImgBox();
 			});
+			cutImgBox();
 		});
 
 		lazyloadImages.forEach(function(image) {
