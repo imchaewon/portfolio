@@ -89,20 +89,21 @@ $(window).load(function(){
 	
 	(function(){
 		var sw = 0;
+		var t = null;
 	
 		$(".sct5 .con > ul > li").mouseenter(function(){
-			console.log(this);
-			console.log($(this));
+			t = this;
 			sw = 1;
 		});
 		$(".sct5 .con > ul > li").mouseleave(function(){
 			sw = 0;
 		});
 				
-		$(".section").each(function(){
+		$(".section").each(function(t){
 			// 개별적으로 Wheel 이벤트 적용
 			$(this).children().on("mousewheel DOMMouseScroll", function(e) {
 				if(sw == 1){
+					console.log(t);
 					return;
 				}
 				e.preventDefault();
