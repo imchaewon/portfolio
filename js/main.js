@@ -234,7 +234,7 @@ $(document).ajaxStop(function() {
 	
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
 	var lazyloadImages;		
 
 	if ("IntersectionObserver" in window) {
@@ -285,7 +285,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		window.addEventListener("resize", lazyload);
 		window.addEventListener("orientationChange", lazyload);
 	}
-});
+});*/
+lazyload();
 
 
 function startLoadFile(){
