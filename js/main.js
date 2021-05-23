@@ -13,14 +13,14 @@ $(window).load(function(){
 	$(".btn_page li").click(function(){
 		let idx = $(this).index();
 
-		$("html,body").animate({"scrollTop":"ofstop" + (idx + 1)},"easeOutQuad");
+		$("html,body").animate({"scrollTop":eval("ofstop" + (idx + 1))},"easeOutQuad");
 		$(".btn" + (idx + 1)).addClass("on").siblings().removeClass("on");
 	});
 
 	for (let i=0;i<=5;i++){
 		$(".p" + i).click(function(e){
 			let j = parseInt(e.target.className.substr(1,1)) + 1;
-			$("html,body").animate({"scrollTop":"ofstop" + j},"easeOutQuad");
+			$("html,body").animate({"scrollTop":eval("ofstop" + j)},"easeOutQuad");
 			$(".btn" + j).addClass("on").siblings().removeClass("on");
 		});
 	}
