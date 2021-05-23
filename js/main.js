@@ -94,6 +94,11 @@ $(window).load(function(){
 			tmp = idx3;
 		});
 	})();
+	
+	var sw = 0;
+	setInterval(function(){
+		console.log(sw);
+	},1000);
 
 	$(".section").each(function(){
 		// 개별적으로 Wheel 이벤트 적용
@@ -110,6 +115,15 @@ $(window).load(function(){
 				delta = -event.detail / 3;
 			}
 			let moveTop = null;
+			$(".sct5 .con").mouseenter(function(){
+				sw = 1;
+			});
+			$(".sct5 .con").mouseleave(function(){
+				sw = 0;
+			});
+			if(sw = 1){
+				return;
+			}
 			if (delta < 0) { // 마우스휠을 위에서 아래로
 				if ($(this).next() != undefined && $(this).next().offset() != undefined) {
 					let i = parseInt(this.classList[0].substr(3,1)) + 1;
@@ -137,10 +151,6 @@ $(window).load(function(){
 				}
 			});
 		});
-	});
-	
-	$(".sct5 .con").scroll(function(){
-		console.log(22222222);
 	});
 });
 
