@@ -286,7 +286,14 @@ $(document).ajaxStop(function() {
 		window.addEventListener("orientationChange", lazyload);
 	}
 });*/
-lazyload();
+lazyload({
+ effect : "fadeIn", // 나타날때 Fadein 효과
+ threshold : 200, // 스크롤 200 픽셀 전에 미리 로딩
+ //event:"click", // 클릭시에 로딩
+ placeholder:"../images/loading.gif" // 로딩전 보여줄 이미지 설정
+ // ... 등등
+});
+
 
 
 function startLoadFile(){
