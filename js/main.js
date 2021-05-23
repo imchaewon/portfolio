@@ -229,7 +229,7 @@ function startLoadFile(){
 
 //JSON 포멧 데이터 처리
 function createImages(objImageInfo) {
-	var images = objImageInfo.ps;
+	var images = objImageInfo.images;
 	var str = "";
 	for (var i = 1; i <= parseInt(images.length / 15) + 1; i++) { //15개씩 자르기
 		
