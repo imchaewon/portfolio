@@ -74,7 +74,7 @@ $(window).load(function(){
 
 	startLoadFile();
 
-	/*$(".sct4 li a").lightBox({
+	$(".sct4 li a").lightBox({
 		overlayBgColor:"skyblue",
 		overlayOpacity: 0.6
 	});
@@ -90,7 +90,7 @@ $(window).load(function(){
 		autoplayDisableOnInteraction:false,
 		autoplay:2500,
 		slidesPerView : 'auto'
-	});*/
+	});
 
 	(() => {
 		let tmp = 18; //초기값
