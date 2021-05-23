@@ -335,6 +335,7 @@ function createImages_ai(objImageInfo) {
 	var str = "";
 	$out:for (var i = 0; i <= parseInt(images.length / 15) + 1; i++) {
 		if(i == images.length && parseInt(images.length / 15) == 0){
+			console.log(123123123);
 			break;
 		}
 		str += '<ul class="swiper-slide">';
