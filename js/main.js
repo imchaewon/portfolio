@@ -97,9 +97,6 @@ $(window).load(function(){
 	
 	(function(){
 		var sw = 0;
-		setInterval(function(){
-			console.log(sw);
-		},1000);
 	
 		$(".sct5 .con > ul").mouseenter(function(){
 			sw = 1;
@@ -112,7 +109,8 @@ $(window).load(function(){
 			// 개별적으로 Wheel 이벤트 적용
 			$(this).children().on("mousewheel DOMMouseScroll", function(e) {
 				if(sw == 1){
-					console.log(123123);
+					console.log(this);
+					console.log($(this));
 					return;
 				}
 				e.preventDefault();
