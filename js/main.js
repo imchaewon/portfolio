@@ -245,11 +245,12 @@ document.addEventListener("DOMContentLoaded", function() {
 					image.src = image.dataset.src;
 					image.classList.remove("lazy");
 					imageObserver.unobserve(image);
-					console.log(11111);
-					cutImgBox();
+					
+					setTimeout(function(){
+						cutImgBox();			
+					},0)
 				}
 			});
-			cutImgBox();
 		});
 
 		lazyloadImages.forEach(function(image) {
