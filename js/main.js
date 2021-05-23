@@ -303,6 +303,9 @@ function createImages_ps(objImageInfo) {
 	var images = objImageInfo.imgs_ps;
 	var str = "";
 	$out:for (var i = 0; i <= parseInt(images.length / 15) + 1; i++) {
+		if(parseInt(images.length / 15) == 0){
+			break;
+		}
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
