@@ -231,7 +231,7 @@ function startLoadFile(){
 function createImages(objImageInfo) {
 	var ps = objImageInfo.ps;
 	var str = "";
-	for (var i = 1; i <= parseInt(images.length / 15) + 1; i++) { //15개씩 자르기
+	for (var i = 1; i <= parseInt(ps.length / 15) + 1; i++) { //15개씩 자르기
 		
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){
