@@ -196,15 +196,15 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5 .conWrap{width:80vw;height:50.485vw;max-width:126.77vh;max-height:80vh;position:absolute;top:calc(6rem + 5vh);left:0;right:0;background:url("../images/laptop.png")no-repeat center/contain;margin:auto;/* width:1030px;height:650px; */}
 
 .sct5 .conWrap .con{width:70%;height:70%;position:relative;top:4.2%;margin:auto;}
-.sct5 .conWrap .con ul,
-.sct5 .conWrap .con ul *{width:100%;height:100%;}
-.sct5 .conWrap .con ul{position:relative;z-index:1;}
-.sct5 .conWrap .con ul li{display:none;width:0;height:0;position:absolute;top:0;left:0;overflow-y:auto;}
-.sct5 .conWrap .con ul li:nth-of-type(19){display:block;width:100%;height:100%;}
-.sct5 .conWrap .con ul strong{position:absolute;left:0;top:0;background:rgba(32,131,170,0.6);opacity:0;transition:all 0.5s ease-out;}
-.sct5 .conWrap .con ul strong p{display:flex;color:#fff;font-size:3.12rem;text-shadow:.2rem .2rem 0.62rem #000;justify-content:center;align-items:center;}
-.sct5 .conWrap .con ul img{width:100%;height:100%;overflow:hidden;box-sizing:border-box;}
-.sct5 .conWrap .con ul a:hover strong{transition:all 0.5s ease-out;opacity:1;}
+.sct5 .conWrap .con > ul,
+.sct5 .conWrap .con > ul *{width:100%;height:100%;}
+.sct5 .conWrap .con > ul{position:relative;z-index:1;}
+.sct5 .conWrap .con > ul li{display:none;width:0;height:0;position:absolute;top:0;left:0;overflow-y:auto;}
+.sct5 .conWrap .con > ul li:nth-of-type(19){display:block;width:100%;height:100%;}
+.sct5 .conWrap .con > ul strong{position:absolute;left:0;top:0;background:rgba(32,131,170,0.6);opacity:0;transition:all 0.5s ease-out;}
+.sct5 .conWrap .con > ul strong p{display:flex;color:#fff;font-size:3.12rem;text-shadow:.2rem .2rem 0.62rem #000;justify-content:center;align-items:center;}
+.sct5 .conWrap .con > ul img{width:100%;height:100%;overflow:hidden;box-sizing:border-box;}
+.sct5 .conWrap .con > ul a:hover strong{transition:all 0.5s ease-out;opacity:1;}
 
 .sct5 .conWrap .tit{position:absolute;top:0;bottom:-5.5rem;left:-7rem;right:-7rem;z-index:0;}
 .sct5 .conWrap .tit>ul{font-size:0;position:absolute;top:0;text-align:center;}
