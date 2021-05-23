@@ -66,10 +66,10 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
 
 .sct1{position:relative;margin:0 auto;}
 .sct1 .txt{position:absolute;top:50%;left:50%;z-index:1;text-align:center;}
-.sct1 .p1 .txt{width:43.75rem;margin:-3.75rem 0 0 -21.87rem;}
+.sct1 .p1 .txt{width:43.75rem;margin:-3.75rem 0 0 -21.87rem;letter-spacing:.12rem;}
 .sct1 .p2 .txt{margin:-1.87rem 0 0 -8.87rem;}
 .sct1 .txt p{font-size:1.25rem;color:#fff;line-height:1rem;line-height:1.87rem;font-family:'Yeon Sung',cursive;}
-.sct1 .p1 .txt p{font-size:2.5rem;line-height:3.75rem;font-weight:bold;}
+.sct1 .p1 .txt p{font-size:2.5rem;line-height:3.75rem;font-weight:bold;letter-spacing:.12rem;}
 .sct1 .p1 .txt p span{vertical-align:middle;}
 .sct1 .p1 .txt .emt{display:inline-block;width:1.8rem;height:2rem;border-radius:50%;border:solid black .2rem;margin-left:.3rem;background:#b296c6;font-size:1rem;line-height:initial;text-align:initial;color:initial;}
 .sct1 .p1 .txt .emt:after{content:'👀';}
@@ -208,7 +208,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 
 .sct5 .conWrap .tit{position:absolute;top:0;bottom:-5.5rem;left:-7rem;right:-7rem;z-index:0;}
 .sct5 .conWrap .tit>ul{font-size:0;position:absolute;top:0;text-align:center;}
-.sct5 .conWrap .tit li{display:flex;width:6rem;height:4rem;margin:1rem 0;border-radius:0.6rem;background:pink;cursor:pointer;line-height:4rem;font-weight:bold;letter-spacing:-.31rem;color:#666;font-size:1rem;position:relative;align-items:center;justify-content:center;}
+.sct5 .conWrap .tit li{display:flex;width:6rem;height:4rem;margin:1rem 0;border-radius:0.6rem;background:pink;cursor:pointer;line-height:4rem;font-weight:bold;color:#666;font-size:1rem;position:relative;align-items:center;justify-content:center;}
 .sct5 .conWrap .tit li h3{line-height:1.4rem;}
 .sct5 .conWrap .tit li h4{display:none;font-size:1rem;font-weight:normal;color:#fff;}
 .sct5 .conWrap .tit .lft{left:0;}

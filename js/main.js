@@ -132,11 +132,11 @@ $(window).load(function(){
 	});
 });
 
+$(".sct5 .con").mouseenter(function(){
+	console.log(22222222);
+});
+
 $(window).scroll(function(){
-	
-	$(".sct5 .con").mouseenter(function(){
-		console.log(22222222);
-	});
 	
 	let s=$(document).scrollTop();
 	for (let i=1;i<=6;i++){
