@@ -238,15 +238,13 @@ document.addEventListener("DOMContentLoaded", function() {
 	if ("IntersectionObserver" in window) {
 		lazyloadImages = document.querySelectorAll(".lazy");
 		var imageObserver = new IntersectionObserver(function(entries, observer) {
-			cutImgBox();
 			entries.forEach(function(entry) {
-				cutImgBox();
 				if (entry.isIntersecting) {
-					cutImgBox();
 					var image = entry.target;
 					image.src = image.dataset.src;
 					image.classList.remove("lazy");
 					imageObserver.unobserve(image);
+					cutImgBox();
 				}
 			});
 		});
