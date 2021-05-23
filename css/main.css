@@ -220,8 +220,8 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5 .conWrap .tit li h4{display:none;font-size:1rem;font-weight:normal;color:#fff;}
 .sct5 .conWrap .tit .lft{left:0;}
 .sct5 .conWrap .tit .lft2{left:-7rem;top:1.5rem;}
-.sct5 .conWrap .tit .lft2:before{content:"new";animation:flash;font-size:1rem;position:absolute;left:50%;top:-8px;z-index:10;transform:translate(-50%,0);background:#7a7a7a;padding:0 0.5em;}
-.sct5 .conWrap .tit .lft2:after{content:"";position:absolute;left:-8px;right:-8px;top:0;bottom:0px;border:2px dashed;border-radius:1rem;}
+.sct5 .conWrap .tit .lft2:before{content:"new";animation:flash 1s 1s infinite;font-size:1rem;position:absolute;left:50%;top:-8px;z-index:10;transform:translate(-50%,0);background:#7a7a7a;padding:0 0.5em;}
+.sct5 .conWrap .tit .lft2:after{content:"";animation:flash 1s 1s infinite;position:absolute;left:-8px;right:-8px;top:0;bottom:0px;border:2px dashed;border-radius:1rem;}
 .sct5 .conWrap .tit .lft li,
 .sct5 .conWrap .tit .lft2 li{animation-name:fadeInLeft;}
 .sct5 .conWrap .tit .rgt{right:0;}
