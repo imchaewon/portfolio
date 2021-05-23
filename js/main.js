@@ -229,7 +229,7 @@ function startLoadFile(){
 
 //JSON 포멧 데이터 처리
 function createImages(objImageInfo) {
-	var ps = objImageInfo.ps;
+	var images = objImageInfo.ps;
 	var str = "";
 	for (var i = 1; i <= parseInt(images.length / 15) + 1; i++) { //15개씩 자르기
 		
@@ -237,7 +237,7 @@ function createImages(objImageInfo) {
 		for(var j=1;j<=15;j++){
 		
 			// N번째 이미지 정보를 구하기
-			var image = ps[i*j];
+			var image = images[i*j];
 			
 			// N번째 이미지 패널을 생성
 			str += '<li><div class="con cutImgBox">';
