@@ -234,9 +234,12 @@ function createImages(objImageInfo) {
 	var images = objImageInfo.images;
 	var str = "";
 	for (var i = 1; i <= parseInt(images.length / 15) + 1; i++) {
-		
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
+		
+			if(images[i]==null || images[i]==undifined){
+				return;
+			}
 		
 			// N번째 이미지 정보를 구하기
 			var image = images[i*j];
