@@ -90,12 +90,12 @@ $(window).load(function(){
 	(function(){
 		var sw = 0;
 	
-		$(".sct5 .con > ul").mouseenter(function(){
+		$(".sct5 .con > ul > li").mouseenter(function(){
 			console.log(this);
 			console.log($(this));
 			sw = 1;
 		});
-		$(".sct5 .con > ul").mouseleave(function(){
+		$(".sct5 .con > ul > li").mouseleave(function(){
 			sw = 0;
 		});
 				
@@ -244,8 +244,8 @@ document.addEventListener("DOMContentLoaded", function() {
 					image.src = image.dataset.src;
 					image.classList.remove("lazy");
 					imageObserver.unobserve(image);
-					cutImgBox();
 				}
+				cutImgBox();
 			});
 		});
 
