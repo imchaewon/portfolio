@@ -144,6 +144,10 @@ console.log(111111);
 $(".conWrap").on("mouseenter",function(){
 	console.log(22222222);
 });
+$(".conWrap").on("click",function(){
+	console.log(33333);
+});
+
 
 $(window).scroll(function(){
 	
