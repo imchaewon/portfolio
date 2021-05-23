@@ -237,13 +237,13 @@ function createImages(objImageInfo) {
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
-			console.log(images[i]);
-			if(images[i]==null || images[i]==undefined || images[i]==""){
-				return;
-			}
-		
 			// N번째 이미지 정보를 구하기
 			var image = images[i*j];
+			
+			console.log(image);
+			if(image[i]==null || image[i]==undefined || image[i]==""){
+				return;
+			}
 			
 			// N번째 이미지 패널을 생성
 			str += '<li><div class="con cutImgBox">';
