@@ -219,6 +219,7 @@ function startLoadFile(){
 		type: 'GET',
 		dataType : 'json',
 		success : function(data){
+			console.log(data);
 			createImages(data);
 		},
 		error : function(a, b, c) {
