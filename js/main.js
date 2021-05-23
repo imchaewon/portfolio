@@ -126,9 +126,6 @@ $(window).load(function(){
 				delta = -event.detail / 3;
 			}
 			let moveTop = null;
-			if(sw = 1){
-				return;
-			}
 			if (delta < 0) { // 마우스휠을 위에서 아래로
 				if ($(this).next() != undefined && $(this).next().offset() != undefined) {
 					let i = parseInt(this.classList[0].substr(3,1)) + 1;
