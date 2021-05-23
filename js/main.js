@@ -333,7 +333,7 @@ function createImages_ps(objImageInfo) {
 function createImages_ai(objImageInfo) {
 	var images = objImageInfo.imgs_ai;
 	var str = "";
-	$out:for (var i = 0; i <= parseInt(images.length / 15) + 1; i++) {
+	$out:for (var i = 0; i <= parseInt(images.length / 15); i++) {
 		console.log(i)
 		if(i == images.length && parseInt(images.length / 15) == 0){
 			console.log(123123123);
@@ -366,7 +366,7 @@ function createImages_ai(objImageInfo) {
 function objImageInfo(objImageInfo) {
 	var imgs_ps = objImageInfo.imgs_ps;
 	var str = "";
-	$out:for (var i = 0; i <= parseInt(imgs_ps.length / 15) + 1; i++) {
+	$out:for (var i = 0; i <= parseInt(imgs_ps.length / 15); i++) {
 		str += '<ul class="swiper-slide">';
 		for(var j=1;j<=15;j++){ //15개씩 자르기
 		
