@@ -1,5 +1,5 @@
 {
-	"images":[
+	"imgs_ps":[
 		{"title":"상세페이지 디자인1","url":"images/ps/work01.jpg"},
 		{"title":"상세페이지 디자인2","url":"images/ps/work02.jpg"},
 		{"title":"상세페이지 디자인3","url":"images/ps/work03.jpg"},
@@ -97,7 +97,7 @@
 		{"title":"click","url":"images/ps/work95.jpg"},
 		{"title":"click","url":"images/ps/work96.jpg"}
 	],
-	"ai":[
+	"imgs_ai":[
 		{"title":"click","url":"images/ai/work01.jpg"},
 		{"title":"click","url":"images/ai/work02.jpg"},
 		{"title":"click","url":"images/ai/work03.jpg"},
