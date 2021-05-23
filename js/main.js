@@ -91,11 +91,11 @@ $(window).load(function(){
 		var sw = 0;
 		var t = null;
 	
-		$(".sct5 .con > ul > li").mouseenter(function(){
+		$(".sct5 li.new").mouseenter(function(){
 			t = $(this);
 			sw = 1;
 		});
-		$(".sct5 .con > ul > li").mouseleave(function(){
+		$(".sct5 li.new").mouseleave(function(){
 			sw = 0;
 			t.removeClass("hide");
 		});
