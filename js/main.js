@@ -236,8 +236,10 @@ document.addEventListener("DOMContentLoaded", function() {
 	var lazyloadImages;		
 
 	if ("IntersectionObserver" in window) {
+		console.log(111);
 		lazyloadImages = document.querySelectorAll(".lazy");
 		var imageObserver = new IntersectionObserver(function(entries, observer) {
+			console.log(222);
 			entries.forEach(function(entry) {
 				if (entry.isIntersecting) {
 					var image = entry.target;
@@ -250,8 +252,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		lazyloadImages.forEach(function(image) {
 			imageObserver.observe(image);
+			console.log(333);
 		});
-	} else {	
+	} else {
+		console.log(444);
 		var lazyloadThrottleTimeout;
 		lazyloadImages = document.querySelectorAll(".lazy");
 		
@@ -266,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
 						if(img.offsetTop < (window.innerHeight + scrollTop)) {
 							img.src = img.dataset.src;
 							img.classList.remove('lazy');
+							console.log(555);
 						}
 				});
 				if(lazyloadImages.length == 0) { 
@@ -273,8 +278,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					window.removeEventListener("resize", lazyload);
 					window.removeEventListener("orientationChange", lazyload);
 				}
-				console.log(333);
-				cutImgBox();
+				console.log(666);
 			}, 20);
 		}
 
