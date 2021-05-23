@@ -192,7 +192,7 @@ $(window).scroll(function(){
 
 });
 
-$(".sct3 .swiper-slide").ready(function(){
+$(".sct3 .swiper-wrapper").ajaxSuccess(function(){
 	$(".sct3 li a").each(function(){
 		$(this).colorbox();
 	});
