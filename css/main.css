@@ -69,7 +69,7 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
 .sct1 .p1 .txt{width:43.75rem;margin:-3.75rem 0 0 -21.87rem;}
 .sct1 .p2 .txt{margin:-1.87rem 0 0 -8.87rem;}
 .sct1 .txt p{font-size:1.25rem;color:#fff;line-height:1rem;line-height:1.87rem;font-family:'Yeon Sung',cursive;}
-.sct1 .p1 .txt p{font-size:2.5rem;line-height:3.75rem;letter-spacing:.12rem;font-weight:bold;}
+.sct1 .p1 .txt p{font-size:2.5rem;line-height:3.75rem;font-weight:bold;}
 .sct1 .p1 .txt p span{vertical-align:middle;}
 .sct1 .p1 .txt .emt{display:inline-block;width:1.8rem;height:2rem;border-radius:50%;border:solid black .2rem;margin-left:.3rem;background:#b296c6;font-size:1rem;line-height:initial;text-align:initial;color:initial;}
 .sct1 .p1 .txt .emt:after{content:'👀';}
@@ -203,7 +203,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5 .conWrap .con > ul li:nth-of-type(19){display:block;width:100%;height:100%;}
 .sct5 .conWrap .con > ul strong{position:absolute;left:0;top:0;background:rgba(32,131,170,0.6);opacity:0;transition:all 0.5s ease-out;}
 .sct5 .conWrap .con > ul strong p{display:flex;color:#fff;font-size:3.12rem;text-shadow:.2rem .2rem 0.62rem #000;justify-content:center;align-items:center;}
-.sct5 .conWrap .con > ul img{width:100%;height:100%;overflow:hidden;box-sizing:border-box;}
+.sct5 .conWrap .con > ul img{width:100%;height:auto;overflow:hidden;box-sizing:border-box;}
 .sct5 .conWrap .con > ul a:hover strong{transition:all 0.5s ease-out;opacity:1;}
 
 .sct5 .conWrap .tit{position:absolute;top:0;bottom:-5.5rem;left:-7rem;right:-7rem;z-index:0;}
