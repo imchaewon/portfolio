@@ -30,6 +30,22 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
   100% {background-position:0 100%;}
 }
 
+@keyframes square-to-circle {
+  20%{transform:rotate(5deg);}
+  50%{background:firebrick;}
+  60%{transform:rotate(0deg);}
+}
+
+@keyframes background-changer {
+  0%, 100% {background-image:url(../images/screen_button.png);}
+  50% {background-image:url(../images/screen_button2.png);}
+}
+
+@keyframes flash{
+	0%{opacity:1;}
+	100%{opacity:0;}
+}
+
 @media (min-width:3000px){
 	html{font-size:200%;}
 }
@@ -112,12 +128,6 @@ transition:7s;}
 .sct2 .gnb li a{display:inline-block;padding:2.4rem 0;font-size:1.25rem;color:#b296c6;}
 .sct2 .gnb li a:hover{color:darkslateblue;}
 
-
-@keyframes square-to-circle {
-  20%{transform:rotate(5deg);}
-  50%{background:firebrick;}
-  60%{transform:rotate(0deg);}
-}
 .sct2 .bubble{width:13rem;height:6rem;background:maroon;transform-origin:1.87rem 1.87rem;animation:square-to-circle 2s 1s linear infinite;transition:all 1s;position:absolute;right:-50%;top:50%;margin:-2.8rem -6.25rem 0 0;z-index:10;overflow:hidden;}
 .sct2 .bubble.on{right:50%;}
 .sct2 .bubble:before{content:"";position:absolute;right:-1.25rem;top:-1rem;width:2rem;border-right:transparent 0.43rem solid;border-left:transparent 0.62rem solid;border-top:#222 2.25rem solid;transform:rotate(74deg);}
@@ -144,11 +154,6 @@ transition:7s;}
 .sct2 .box .about4 ul{margin-top:8.12rem;}
 .sct2 .box .about4 li{color:#e0e0e0;text-align:center;line-height:1.25rem;padding-bottom:.31rem;}
 
-
-@keyframes background-changer {
-  0%, 100% {background-image:url(../images/screen_button.png);}
-  50% {background-image:url(../images/screen_button2.png);}
-}
 
 .sctSlide{background:#dfdfdf;position:relative;}
 .sctSlide .screen{position:absolute;width:70%;height:70%;left:15%;top:15%;background:#fff;border-radius:6em;}
@@ -215,7 +220,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5 .conWrap .tit li h4{display:none;font-size:1rem;font-weight:normal;color:#fff;}
 .sct5 .conWrap .tit .lft{left:0;}
 .sct5 .conWrap .tit .lft2{left:-7rem;top:1.5rem;}
-.sct5 .conWrap .tit .lft2:before{content:"new";font-size:1rem;position:absolute;left:50%;top:-8px;z-index:10;transform:translate(-50%,0);background:#7a7a7a;padding:0 0.5em;}
+.sct5 .conWrap .tit .lft2:before{content:"new";animation:flash;font-size:1rem;position:absolute;left:50%;top:-8px;z-index:10;transform:translate(-50%,0);background:#7a7a7a;padding:0 0.5em;}
 .sct5 .conWrap .tit .lft2:after{content:"";position:absolute;left:-8px;right:-8px;top:0;bottom:0px;border:2px dashed;border-radius:1rem;}
 .sct5 .conWrap .tit .lft li,
 .sct5 .conWrap .tit .lft2 li{animation-name:fadeInLeft;}
