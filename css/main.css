@@ -65,14 +65,13 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
 .bgMain{position:fixed;top:0;left:0;height:100%;z-index:-1;}*/
 
 #preload{display:flex;position:fixed;left:0;top:0;width:100%;height:100%;z-index:999;background:#eee;align-items:center;justify-content:center;}
-
 #preload .box{position:relative;width:200px;height:140px;background:none;margin:0 auto;display:block;padding-bottom:5%;}
 #preload .spinner{position:relative;margin:0 auto;width:100%;height:100%;background:none;animation:spin 3s ease-in-out infinite alternate;}
-#preload .center{position:relative;background:#666;width:49%;height:70%;border-radius:50%;top:15%;left:25.5%;}
-#preload .grip{position:relative;background:#666;width:30%;height:30%;border-radius:50%;top:35%;left:35%;box-shadow:0 0 10px #333}
-#preload .shaper1{position:absolute;background:#666;width:30%;height:43%;border-radius:50%;top:6.4%;left:9.2%;}
-#preload .shaper2{position:absolute;background:#666;width:30%;height:43%;border-radius:50%;top:6.8%;left:61.7%;}
-#preload .shaper3{position:absolute;background:#666;width:30%;height:43%;border-radius:50%;top:71%;left:34.9%;}
+#preload .center{position:relative;background:#eee;width:49%;height:70%;border-radius:50%;top:15%;left:25.5%;}
+#preload .grip{position:relative;background:#eee;width:30%;height:30%;border-radius:50%;top:35%;left:35%;box-shadow:0 0 10px #333}
+#preload .shaper1{position:absolute;background:#eee;width:30%;height:43%;border-radius:50%;top:6.4%;left:9.2%;}
+#preload .shaper2{position:absolute;background:#eee;width:30%;height:43%;border-radius:50%;top:6.8%;left:61.7%;}
+#preload .shaper3{position:absolute;background:#eee;width:30%;height:43%;border-radius:50%;top:71%;left:34.9%;}
 #preload .one,
 #preload .two,
 #preload .three{background:rgb(201,162,162);width:25%;height:35%;position:relative;border-radius:50%;z-index:2;}
@@ -82,7 +81,7 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
 #preload .outer-silver{position:relative;width:80%;height:80%;background:#BBB;border-radius:50%;left:10%;top:10%;}
 #preload .black{position:relative;width:95%;height:95%;background:#222;border-radius:50%;left:2.5%;top:2.5%;}
 #preload .inner-silver{position:relative;width:60%;height:60%;background:#BBB;border-radius:50%;left:20%;top:20%;}
-#preload .hole{position:relative;width:95%;height:95%;background:#666;border-radius:50%;left:2.5%;top:2.5%;}
+#preload .hole{position:relative;width:95%;height:95%;background:#eee;border-radius:50%;left:2.5%;top:2.5%;}
 #preload .loading-text{position:relative;z-index:1;font-size:1.5rem;font-family:"Comic Sans MS", cursive, sans-serif;text-align:center;}
 
 
