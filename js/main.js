@@ -1,6 +1,6 @@
 $(window).load(function(){
 	
-	$(".loading").hide();
+	$(".loading").hide();;
 
 	new WOW().init();
 	//layerFix();
