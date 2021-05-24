@@ -4,7 +4,7 @@ $(window).load(function(){
     if (isException()) {
         destroyPreloadLayer(); // destroy preloader
     } else {
-        setTimeout(startAnimation, 200); // show throbber explicitely for 0.2s then start the animation
+        console.log(123);
     }
 
 	new WOW().init();
@@ -421,19 +421,6 @@ function isException() {
     })(navigator.userAgent || navigator.vendor || window.opera);
 
     return check;
-}
-
-// Run animation on page load
-// @return {undefined}
-function startAnimation() {
-    targets.forEach(function(target) {
-        target.node.classList.add(defaults.classes.isInit);
-    });
-
-    destroyPreloadLayer(); // hide throbber
-    animateOnScroll(); // trigger animation on currently visible elements
-
-    window.addEventListener("scroll", animateOnScroll); // watch scroll event and trigger animation
 }
 
 // Hide "loading" throbber layer
