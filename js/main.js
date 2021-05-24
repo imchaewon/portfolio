@@ -434,7 +434,7 @@ function destroyPreloadLayer() {
         opacity -= interval;
 
         if (opacity > 0) {
-	console.log(111);;
+	console.log(111);;;
             layer.style.opacity = opacity;
             window.requestAnimationFrame(animate);
         } else {
