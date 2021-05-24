@@ -387,26 +387,7 @@ function createImages_ai(objImageInfo) {
 	imgCon.append(str);
 }
 
-function destroyPreloadLayer() {
-    var layer = document.getElementById("preload");
-    var opacity = 1;
-    var interval = 1 / 8;
-
-    function animate() {
-        opacity -= interval;
-
-        if (opacity > 0) {
-            layer.style.opacity = opacity;
-            window.requestAnimationFrame(animate);
-        } else {
-            layer.removeAttribute("style");
-            document.body.classList.add("ready"); // hide throbber behind the main content
-        }
-    }
-
-    animate();
-}
-
+//로딩 처리
 function isException() {
     var check = false;
 
