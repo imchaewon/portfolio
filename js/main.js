@@ -1,6 +1,6 @@
 $(window).load(function(){
 	
-	document.body.classList.add("ready");
+	$("#preload").hide();
 
 	new WOW().init();
 	//layerFix();
