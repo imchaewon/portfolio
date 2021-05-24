@@ -1,12 +1,27 @@
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
-@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);*/
+/* @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster'); */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zo-mM5Ez.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Yeon Sung';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/yeonsung/v10/QldMNTpbohAGtsJvUn6xTDtMzKMFqIuVbfp5ryWEr_gQfipm.2.woff2) format('woff2');
+  unicode-range: U+d723-d728, U+d72a-d733, U+d735-d748, U+d74a-d74f, U+d752-d753, U+d755-d757, U+d75a-d75f, U+d762-d764, U+d766-d768, U+d76a-d76b, U+d76d-d76f, U+d771-d787, U+d789-d78b, U+d78d-d78f, U+d791-d797, U+d79a, U+d79c, U+d79e-d7a3, U+f900-f909, U+f90b-f92e;
+}
+
 
 html,body{overflow-x:hidden;}
-body{overflow-y:hidden;}
-body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum,sans-serif;}
+body{overflow-y:hidden;font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum,sans-serif;}
 
 ::-webkit-scrollbar{
 	min-width:12px;
@@ -169,6 +184,7 @@ transition:7s;}
 .sct2 .box>div .txtWrap{color:#e0e0e0;text-align:center;line-height:1.25rem;padding-top:7rem;}
 .sct2 .box>div .txtWrap p{display:inline-block;padding-bottom:.6em;line-height:1.25em;}
 .sct2 .box>div .txtWrap dl{display:flex;align-items:center;justify-content:center;padding-bottom:.6em;}
+.sct2 .box>div .txtWrap dt{width:47%;}
 .sct2 .box>div .txtWrap dd{padding-left:.8em;}
 
 .sct2 .box .about1{background:#5b5b5b url(../images/about_edu.png) no-repeat 50% 16%/3.71rem;position:absolute;left:50%;top:16rem;margin-left:-9.78rem;opacity:0;}
@@ -269,7 +285,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct6 .sct6_inner{position:absolute;left:50%;top:50%;margin:-22vw 0 0 -12vw;}
 .sct6 .sct6_inner>div{display:inline-flex;vertical-align:middle;position:relative;}
 .sct6 .line{width:24vw;max-width:30vh;height:46vw;margin:0 -2rem;background:url(../images/line.png)no-repeat center/contain;}
-.sct6 p{font-size:2rem;color:#666;margin:0 0 0 -7rem;text-shadow:0.1rem 0.1rem 0.1rem #fff;z-index:1;animation-name:fadeIn;animation-duration:1s;}
+.sct6 p{font-family:;font-font-size:2rem;color:#666;margin:0 0 0 -7rem;text-shadow:.05rem .05rem .05rem #fff;z-index:1;animation-name:fadeIn;animation-duration:1s;}
 .sct6 .tel{margin-top:-10rem;}
 .sct6 .tel p{animation-delay:1s;}
 .sct6 .email{margin:0 0 -10rem 3.5rem;align-items:flex-end;}
