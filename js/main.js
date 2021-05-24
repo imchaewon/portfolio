@@ -423,7 +423,40 @@ function isException() {
     return check;
 }
 
+// Run animation on page load
+// @return {undefined}
+function startAnimation() {
+    targets.forEach(function(target) {
+        target.node.classList.add(defaults.classes.isInit);
+    });
 
+    destroyPreloadLayer(); // hide throbber
+    animateOnScroll(); // trigger animation on currently visible elements
+
+    window.addEventListener("scroll", animateOnScroll); // watch scroll event and trigger animation
+}
+
+// Hide "loading" throbber layer
+// @return {undefined}
+function destroyPreloadLayer() {
+    var layer = document.getElementById("preload");
+    var opacity = 1;
+    var interval = 1 / 8;
+
+    function animate() {
+        opacity -= interval;
+
+        if (opacity > 0) {
+            layer.style.opacity = opacity;
+            window.requestAnimationFrame(animate);
+        } else {
+            layer.removeAttribute("style");
+            document.body.classList.add("ready"); // hide throbber behind the main content
+        }
+    }
+
+    animate();
+}
 
 
 
