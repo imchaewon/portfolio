@@ -434,9 +434,11 @@ function destroyPreloadLayer() {
         opacity -= interval;
 
         if (opacity > 0) {
+	console.log(111);
             layer.style.opacity = opacity;
             window.requestAnimationFrame(animate);
         } else {
+			console.log(222);
             layer.removeAttribute("style");
             document.body.classList.add("ready"); // hide throbber behind the main content
         }
