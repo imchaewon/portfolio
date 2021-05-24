@@ -167,11 +167,13 @@ transition:7s;}
 .sct2 .box{width:75rem;height:37.5rem;position:absolute;left:50%;top:50%;margin:-18.75rem 0 0 -37.5rem;}
 .sct2 .box>div{width:19.56rem;height:18rem;margin:0 auto;border-radius:1.87rem;margin-top:-6.25rem;}
 .sct2 .box>div .txtWrap{color:#e0e0e0;text-align:center;line-height:1.25rem;padding-top:7rem;}
-.sct2 .box>div .txtWrap p{padding-bottom:.6em;}
+.sct2 .box>div .txtWrap p{display:inline-block;padding-bottom:.6em;line-height:1.25em;}
+.sct2 .box>div .txtWrap dl dd{line-height:2.5em;}
 
 .sct2 .box .about1{background:#5b5b5b url(../images/about_edu.png) no-repeat 50% 16%/3.71rem;position:absolute;left:50%;top:16rem;margin-left:-9.78rem;opacity:0;}
 .sct2 .box .about1 .txtWrap{padding-top:5.8rem;}
 .sct2 .box .about2{background:#5b5b5b url(../images/about_profile.png) no-repeat 50% 20%/2.71rem;position:absolute;left:50%;top:16rem;margin-left:-9.78rem;opacity:0;}
+.sct2 .box .about2 .txtWrap p:nth-of-type(1){margin-right:1em;}
 .sct2 .box .about2 a{color:#e0e0e0;letter-spacing:-.31rem;}
 .sct2 .box .about3{background:#5b5b5b url(../images/about_skils_min.png) no-repeat center 2.81rem;position:absolute;right:50%;margin-right:-9.78rem;top:16rem;opacity:0;}
 .sct2 .box .about3 .skill_wrap{margin-top:6.25rem;text-align:right;}
