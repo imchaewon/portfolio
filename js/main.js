@@ -407,6 +407,7 @@ function isException() {
 // Hide "loading" throbber layer
 // @return {undefined}
 function destroyPreloadLayer() {
+	console.log(123123123);
     var layer = document.getElementById("preload");
     var opacity = 1;
     var interval = 1 / 8;
