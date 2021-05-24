@@ -68,7 +68,7 @@ body{font-family:'Lobster',cursive,"malgun gothic","맑은고딕","돋움",dotum
 #preload .box{position:relative;width:200px;height:140px;background:none;margin:0 auto;display:block;}
 #preload .spinner{position:relative;margin:0 auto;width:100%;height:100%;background:none;animation:spin 3s ease-in-out infinite alternate;}
 #preload .center{position:relative;background:rgb(237,198,198);width:49%;height:70%;border-radius:50%;top:15%;left:25.5%;}
-#preload .grip{position:relative;background:linear-gradient(45deg,rgba(0,0,0,.3),transparent);width:40%;height:40%;border-radius:50%;top:30%;left:30%;z-index:10;box-shadow:0 0 5px #333}
+#preload .grip{position:relative;background:linear-gradient(45deg,rgba(0,0,0,.2),transparent);width:40%;height:40%;border-radius:50%;top:30%;left:30%;z-index:10;box-shadow:0 0 5px #333}
 #preload .shaper1{position:absolute;background:#eee;width:30%;height:43%;border-radius:50%;top:6.4%;left:9.2%;}
 #preload .shaper2{position:absolute;background:#eee;width:30%;height:43%;border-radius:50%;top:6.8%;left:61.7%;}
 #preload .shaper3{position:absolute;background:#eee;width:30%;height:43%;border-radius:50%;top:71%;left:34.9%;}
