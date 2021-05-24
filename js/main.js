@@ -286,7 +286,7 @@ $(document).ajaxStop(function() {
 		window.addEventListener("orientationChange", lazyload);
 	}
 });*/
-new lazyload({
+$("img.lazy").lazyload({
  effect : "fadeIn", // 나타날때 Fadein 효과
  threshold : 200, // 스크롤 200 픽셀 전에 미리 로딩
  //event:"click", // 클릭시에 로딩
