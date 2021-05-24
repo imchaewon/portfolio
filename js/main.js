@@ -18,7 +18,7 @@ $(window).load(function(){
 	});
 
 	for (let i=0;i<=5;i++){
-		$(".p" + i).click(function(e){
+		$(".p"+i).click(function(e){
 			let j = parseInt(e.target.className.substr(1,1)) + 1;
 			$("html,body").animate({"scrollTop":eval("ofstop" + j)},"easeOutQuad");
 			$(".btn" + j).addClass("on").siblings().removeClass("on");
@@ -91,11 +91,11 @@ $(window).load(function(){
 		var sw = 0;
 		var t = null;
 	
-		$(".sct5 li.new").mouseenter(function(){
+		$(".sct5 .con > ul > li").mouseenter(function(){
 			t = $(this);
 			sw = 1;
 		});
-		$(".sct5 li.new").mouseleave(function(){
+		$(".sct5 .con > ul > li").mouseleave(function(){
 			sw = 0;
 			t.removeClass("hide");
 		});
@@ -234,7 +234,7 @@ $(document).ajaxStop(function() {
 	
 });
 
-/*document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 	var lazyloadImages;		
 
 	if ("IntersectionObserver" in window) {
@@ -249,7 +249,7 @@ $(document).ajaxStop(function() {
 					
 					setTimeout(function(){
 						cutImgBox();
-					},100)
+					},1000)
 				}
 			});
 		});
@@ -285,15 +285,7 @@ $(document).ajaxStop(function() {
 		window.addEventListener("resize", lazyload);
 		window.addEventListener("orientationChange", lazyload);
 	}
-});*/
-$("img.lazy").lazyload({
- effect : "fadeIn", // 나타날때 Fadein 효과
- threshold : 200, // 스크롤 200 픽셀 전에 미리 로딩
- //event:"click", // 클릭시에 로딩
- placeholder:"../images/loading.gif" // 로딩전 보여줄 이미지 설정
- // ... 등등
 });
-
 
 
 function startLoadFile(){
