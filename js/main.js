@@ -103,6 +103,9 @@ $(window).load(function(){
 		});
 				
 		$(".section").each(function(){
+			$(window).scroll(function(){
+				console.log(123123);
+			});
 			// 개별적으로 Wheel 이벤트 적용
 			$(this).children().on("mousewheel DOMMouseScroll", function(e) {
 				console.log(111);
@@ -158,7 +161,7 @@ $(window).load(function(){
 	})();
 });
 
-
+(function(){
 let sw_pen = true;
 $(window).scroll(function(){
 	
@@ -202,8 +205,8 @@ $(window).scroll(function(){
 		$(".sct2 .header").addClass("on");
 	else
 		$(".sct2 .header").removeClass("on");
-
 });
+})();
 
 $(document).ajaxStop(function() {
 	
