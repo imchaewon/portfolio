@@ -189,6 +189,7 @@ $(window).scroll(function(){
 			sw_pen = false;
 			console.log(sw_pen);
 			$(".sct6 .email .pen").delay(500).fadeIn(500).animate({"bottom":".5rem","right":"-13rem"}).delay(1000).fadeOut();
+			return;
 		}
 	}
 
