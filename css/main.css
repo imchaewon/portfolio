@@ -309,7 +309,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5 .tit .lft2{left:-7rem;top:1.5rem;}
 .sct5 .tit .lft2:before{content:"new";opacity:0;animation:up-and-down 1s 1s infinite alternate;font-size:1rem;position:absolute;left:50%;top:-12px;z-index:10;transform:translate(-50%,0);background:#7a7a7a;padding:0 .5em .2em;}
 .sct5 .tit .lft2:after{content:"";opacity:0;position:absolute;left:-8px;right:-8px;top:0;bottom:0px;border:2px dashed;border-radius:1rem;z-index:-1;}
-.sct5.on .tit .lft2:before{opacity:1;}
+.sct5.on .tit .lft2:before{opacity:1;transition:all 3s ease-out 3s;}
 .sct5.on .tit .lft2:after{animation:show 1s 2s forwards;}
 .sct5 .tit .lft li,
 .sct5 .tit .lft2 li{animation-name:fadeInLeft;}
