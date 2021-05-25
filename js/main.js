@@ -104,7 +104,7 @@ $(window).load(function(){
 				
 		$(".section").each(function(){
 			$(window).scroll(function(){
-				console.log(123123);
+				console.log($(this));
 			});
 			// 개별적으로 Wheel 이벤트 적용
 			$(this).children().on("mousewheel DOMMouseScroll", function(e) {
