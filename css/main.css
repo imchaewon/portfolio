@@ -206,7 +206,7 @@ transition:7s;}
 .sct2 .box>div{display:flex;width:19.56rem;height:18rem;border-radius:1.87rem;margin-top:-6.25rem;align-items:center;justify-content:center;}
 .sct2 .box>div .txtWrap{color:#e0e0e0;text-align:center;line-height:1.25rem;padding-top:7rem;}
 .sct2 .box>div .txtWrap p{display:inline-block;padding-bottom:.6em;line-height:1.25em;}
-.sct2 .box>div .txtWrap dl{display:flex;align-items:center;justify-content:center;padding-bottom:.6em;}
+.sct2 .box>div .txtWrap dl{display:flex;align-items:center;justify-content:center;padding-bottom:.6em;position:relative;}
 .sct2 .box>div .txtWrap dl:first-of-type:before{content: "";display: block;border-top: 1px solid #fff;width: 80%;position: absolute;top: -1.2em;}
 .sct2 .box>div .txtWrap dt{width:47%;}
 .sct2 .box>div .txtWrap dd{padding-left:.8em;}
