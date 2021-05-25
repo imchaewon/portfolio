@@ -328,11 +328,11 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct6{background:#333;position:relative;overflow:hidden;}
 .sct6 .sct6_inner{position:absolute;left:50%;top:50%;margin:-22vw 0 0 -12vw;}
 .sct6 .sct6_inner>div{display:inline-flex;vertical-align:middle;position:relative;}
-.sct6 .line{width:24vw;max-width:30vh;height:46vw;margin:0 -2rem;background:url(../images/line.png)no-repeat center/contain;}
+.sct6 .line{width:24vw;max-width:30vh;height:46vw;margin:0 -4rem;background:url(../images/line.png)no-repeat center/contain;}
 .sct6 p{font-family:Pattaya,cursive,"malgun gothic","맑은고딕","돋움",dotum,sans-serif;font-size:2rem;color:#666;margin:0 0 0 -7rem;text-shadow:.05rem .05rem .05rem #fff;z-index:1;animation-name:fadeIn;animation-duration:1s;}
 .sct6 .tel{margin-top:-10rem;}
 .sct6 .tel p{animation-delay:1s;}
-.sct6 .email{margin:0 0 -10rem 3.5rem;align-items:flex-end;}
+.sct6 .email{margin:0 0 -10rem 5rem;align-items:flex-end;}
 .sct6 .email p{animation-delay:2s;}
 .sct6 .email .pen{display:none;width:5rem;height:12rem;background:lightskyblue;border-top:solid 3rem cornflowerblue;border-radius:1rem 3rem 50% 50%;transform:skew(-50deg,3deg);position:absolute;bottom:12rem;right:15rem;z-index:2;}
 .sct6 .email .pen:before{content:"";position:absolute;border:solid #555;border-width:1.5rem 0.8rem 0 2.1rem;border-left-color:transparent;bottom:-0.4rem;left:.3rem;transform:rotate(28deg)}
