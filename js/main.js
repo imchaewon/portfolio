@@ -182,7 +182,7 @@ $(window).scroll(function(){
 	}else if(s<ofstop6 - 300){
 		$(".sct5").addClass("on").siblings().removeClass("on");
 		$(".btn_page li:eq(4)").addClass("on").siblings().removeClass("on");
-		$(".sct5 h4").delay(3000).fadeIn(1000).fadeOut(500).fadeIn(500);
+		//$(".sct5 h4").delay(3000).fadeIn(1000).fadeOut(500).fadeIn(500);
 	}else{
 		$(".sct6").addClass("on").siblings().removeClass("on");
 		$(".btn_page li:eq(5)").addClass("on").siblings().removeClass("on");
