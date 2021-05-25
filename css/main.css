@@ -301,7 +301,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5 .tit li{display:flex;width:6rem;height:4rem;margin:1rem 0;border-radius:0.6rem;background:pink;cursor:pointer;line-height:4rem;font-weight:bold;color:#666;font-size:1rem;position:relative;align-items:center;justify-content:center;}
 .sct5 .tit li h3{line-height:1.4rem;}
 .sct5 .tit li h4{opacity:0;font-size:1rem;font-weight:normal;color:#fff;}
-.sct5.on .tit li h4{animation:flash 5s 2s infinite;color:#aaa;}
+.sct5.on .tit li h4{animation:flash 5s 2s infinite;color:#ccc;}
 .sct5 .tit li img{display:inline-block;vertical-align:middle;max-width:.6em;max-height:.6em;padding:.5em;}
 .sct5 .tit li .txt{display:inline-block;vertical-align:middle;}
 .sct5 .tit .lft{left:0;}
