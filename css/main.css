@@ -296,6 +296,8 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5 .tit li{display:flex;width:6rem;height:4rem;margin:1rem 0;border-radius:0.6rem;background:pink;cursor:pointer;line-height:4rem;font-weight:bold;color:#666;font-size:1rem;position:relative;align-items:center;justify-content:center;}
 .sct5 .tit li h3{line-height:1.4rem;}
 .sct5 .tit li h4{display:none;font-size:1rem;font-weight:normal;color:#fff;}
+.sct5 .tit li img{max-width:1em;max-height:1em;}
+.sct5 .tit li .txt{}
 .sct5 .tit .lft{left:0;}
 .sct5 .tit .lft2{left:-7rem;top:1.5rem;}
 .sct5 .tit .lft2:before{content:"new";animation:up-and-down 1s 1s infinite alternate;font-size:1rem;position:absolute;left:50%;top:-12px;z-index:10;transform:translate(-50%,0);background:#7a7a7a;padding:0 .5em .2em;}
