@@ -258,9 +258,9 @@ document.addEventListener("DOMContentLoaded", function() {
 					image.classList.remove("lazy");
 					imageObserver.unobserve(image);
 					
-					setTimeout(function(){
+					/*setTimeout(function(){
 						cutImgBox();
-					},100)
+					},100)*/
 				}
 			});
 		});
