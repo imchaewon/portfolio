@@ -105,11 +105,14 @@ $(window).load(function(){
 		$(".section").each(function(){
 			// 개별적으로 Wheel 이벤트 적용
 			$(this).children().on("mousewheel DOMMouseScroll", function(e) {
+				console.log(111);
 				if(sw == 1){
 					t.addClass("hide");
 					return;
 				}
+				console.log(222);
 				e.preventDefault();
+				console.log(333);
 				let delta = 0;
 				if (!event) event = window.event;
 				if (event.wheelDelta) {
@@ -121,9 +124,9 @@ $(window).load(function(){
 					delta = -event.detail / 3;
 				}
 				let moveTop = null;
+				console.log(444);
+				console.log($(this));
 				if (delta < 0) { // 마우스휠을 위에서 아래로
-					console.log(111);
-					console.log($(this));
 					if ($(this).next() != undefined && $(this).next().offset() != undefined) {
 						let i = parseInt(this.classList[0].substr(3,1)) + 1;
 						moveTop = eval("$('.sct" + i + "')").offset().top;
