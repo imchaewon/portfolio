@@ -187,6 +187,7 @@ $(window).scroll(function(){
 	}else{
 		$(".btn_page li:eq(5)").addClass("on").siblings().removeClass("on");
 		if(sw_pen){
+			sw_pen = false;
 			$(".sct6 .email .pen").delay(500).fadeIn(500).animate({"bottom":".5rem","right":"-13rem"}).delay(1000).fadeOut();
 		}
 	}
