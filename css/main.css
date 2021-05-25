@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster'); */
 /* latin */
 @font-face {
-  font-family: 'Lobster';
+  font-family: 'Lobster';;
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zoKmMw.woff2) format('woff2');
