@@ -180,8 +180,7 @@ $(window).scroll(function(){
 		$(".sct5 h4").delay(3000).fadeIn(1000).fadeOut(500).fadeIn(500);
 	}else{
 		$(".btn_page li:eq(5)").addClass("on").siblings().removeClass("on");
-		console.log(11111);
-		$(".sct6 .email .pen").delay(500).fadeIn(500).animate({"bottom":".5rem","right":"-13rem"}).delay(1000).fadeOut();
+		$(".sct6 .email .pen").stop().delay(500).fadeIn(500).animate({"bottom":".5rem","right":"-13rem"}).delay(1000).fadeOut();
 	}
 
 	if(s>=80){
