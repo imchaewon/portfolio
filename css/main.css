@@ -120,9 +120,9 @@ body{overflow-y:hidden;font-family:'Lobster',cursive,"malgun gothic","맑은고�
 #preload .hole{position:relative;width:95%;height:95%;background:#eee;border-radius:50%;left:2.5%;top:2.5%;}
 #preload .loading-text{position:relative;font-size:1.5rem;font-family:"Comic Sans MS",cursive,sans-serif;text-align:center;margin-top:.2em;padding-bottom:1em;z-index:10;}
 #preload .loading-text span{opacity:1;display:inline-block;}
-#preload .loading-text span:nth-of-type(1){animation:load_dot1 3s infinite;}
-#preload .loading-text span:nth-of-type(2){animation:load_dot2 2s 1s infinite;}
-#preload .loading-text span:nth-of-type(3){animation:load_dot3 1s 2s infinite;}
+#preload .loading-text span:nth-of-type(1){animation:load_dot1 3s 1s infinite;}
+#preload .loading-text span:nth-of-type(2){animation:load_dot2 3s 2s infinite;}
+#preload .loading-text span:nth-of-type(3){animation:load_dot3 3s 3s infinite;}
 
 .page{position:fixed;right:2.8vw;top:50%;margin-top:-12vw;z-index:60;}
 .page .btn_page{float:right;margin-bottom:1vw;position:relative;}
