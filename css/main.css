@@ -213,7 +213,7 @@ transition:7s;}
 .sct2 .box .wrap{width:100%;color:#e0e0e0;text-align:center;line-height:1.25rem;padding-top:4rem;}
 .sct2 .box .wrap p{display:inline-block;padding-bottom:.6em;line-height:1.25em;}
 .sct2 .box .wrap dl{display:flex;align-items:center;justify-content:center;padding-bottom:.6em;position:relative;}
-.sct2 .box .wrap dt{width:44%;text-align:right;}
+.sct2 .box .wrap dt{width:48%;text-align:right;}
 .sct2 .box .wrap dd{width:46%;}
 
 .sct2 .about1{background:#5b5b5b url(../images/about_edu.png) no-repeat 50% 16%/3.71rem;position:absolute;left:50%;top:16rem;margin-left:-9.78rem;opacity:0;}
