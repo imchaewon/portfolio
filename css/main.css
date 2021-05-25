@@ -87,11 +87,6 @@ body{overflow-y:hidden;font-family:'Lobster','Nanum Myeongjo',"malgun gothic","ë
 	100%{margin-top:0;font-size:1.2rem;}
 }
 
-@keyframes flash{
-	0%{opacity:1;}
-	100%{opacity:0;}
-}
-
 @keyframes spin{
   100%{transform:translate3d(0,0,0) rotate(3600deg);}
 }
@@ -301,7 +296,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5 .tit .lft{left:0;}
 .sct5 .tit .lft2{left:-7rem;top:1.5rem;}
 .sct5 .tit .lft2:before{content:"new";animation:up-and-down 1s 1s infinite alternate;font-size:1rem;position:absolute;left:50%;top:-12px;z-index:10;transform:translate(-50%,0);background:#7a7a7a;padding:0 .5em .2em;}
-.sct5 .tit .lft2:after{content:"";animation:flash 1s 1s infinite alternate;position:absolute;left:-8px;right:-8px;top:0;bottom:0px;border:2px dashed;border-radius:1rem;z-index:-1;}
+.sct5 .tit .lft2:after{content:"";position:absolute;left:-8px;right:-8px;top:0;bottom:0px;border:2px dashed;border-radius:1rem;z-index:-1;}
 .sct5 .tit .lft li,
 .sct5 .tit .lft2 li{animation-name:fadeInLeft;}
 .sct5 .tit .rgt{right:0;}
