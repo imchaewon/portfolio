@@ -158,6 +158,7 @@ $(window).load(function(){
 });
 
 
+let sw_pen = true;
 $(window).scroll(function(){
 	
 	let s=$(document).scrollTop();
@@ -171,7 +172,6 @@ $(window).scroll(function(){
 //	console.log(ofstop4);//2455
 //	console.log(ofstop5);//3305
 //	console.log(ofstop6);//4156
-	let sw_pen = true;
 	if(s<ofstop2 - 300){
 		$(".btn_page li:eq(0)").addClass("on").siblings().removeClass("on");
 	}else if(s<ofstop3 - 300){
@@ -186,10 +186,7 @@ $(window).scroll(function(){
 	}else{
 		$(".btn_page li:eq(5)").addClass("on").siblings().removeClass("on");
 		if(sw_pen){
-			sw_pen = false;
-			console.log(sw_pen);
 			$(".sct6 .email .pen").delay(500).fadeIn(500).animate({"bottom":".5rem","right":"-13rem"}).delay(1000).fadeOut();
-			return;
 		}
 	}
 
