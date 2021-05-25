@@ -122,6 +122,8 @@ $(window).load(function(){
 				}
 				let moveTop = null;
 				if (delta < 0) { // 마우스휠을 위에서 아래로
+					console.log(111);
+					console.log($(this));
 					if ($(this).next() != undefined && $(this).next().offset() != undefined) {
 						let i = parseInt(this.classList[0].substr(3,1)) + 1;
 						moveTop = eval("$('.sct" + i + "')").offset().top;
