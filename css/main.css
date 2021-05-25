@@ -217,15 +217,15 @@ transition:7s;}
 .sct2 .about2 .wrap p:nth-of-type(1){margin-right:1em;}
 .sct2 .about2 a{color:#e0e0e0;letter-spacing:-.31rem;}
 .sct2 .about3{background:#5b5b5b url(../images/about_skils_min.png) no-repeat center 2.81rem;position:absolute;right:50%;margin-right:-9.78rem;top:16rem;opacity:0;}
-.sct2 .about3 .wrap{text-align:right;}
 .sct2 .about3 .skill1,
 .sct2 .about3 .skill2,
 .sct2 .about3 .skill3,
 .sct2 .about3 .skill4,
 .sct2 .about3 .skill5{height:1.87rem;}
-.sct2 .about3 span{width:2.25rem;color:#e0e0e0;float:left;font-variant:small-caps;}
+.sct2 .about3 .wrap > div *{display:inline-block;}
+.sct2 .about3 span{width:2.25rem;color:#e0e0e0;float:left;font-variant:small-caps;text-align:right;}
 .sct2 .about3 span.last{width:8.31rem;height:2.43rem;font-size:.75rem;letter-spacing:-0.02em;background:url(../images/balloon.png)no-repeat;color:#2f2f2f;margin:-1.87rem 0 0 14.35rem;display:none;}
-.sct2 .about3 .graph{float:left;margin:.31rem 0 0 2.18rem;}
+.sct2 .about3 .graph{float:left;margin:.31rem 0 0 2.18rem;font-size:0;}
 .sct2 .about3 .graph>div{width:1.25rem;height:0.62rem;background:#fff;float:left;margin-right:.25rem;border-radius:50%;}
 .sct2 .about4{background:#5b5b5b url(../images/certificate.png) no-repeat 50% 20%/3.21rem;position:absolute;left:50%;bottom:9.75rem;margin-left:-9.78rem;opacity:0;}
 .sct2 .about4 li{color:#e0e0e0;text-align:center;line-height:1.25rem;padding-bottom:.31rem;}
