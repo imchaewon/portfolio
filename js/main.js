@@ -150,6 +150,7 @@ $(window).load(function(){
 					scrollTop: moveTop + 'px'
 				}, {
 					duration:800,easing:"easeOutQuad",complete:function () {
+						console.log("이동완료");
 					}
 				});
 			});
