@@ -203,22 +203,28 @@ transition:7s;}
 .sct2 .bubble h2{font-size:1.75rem;color:#fff;font-weight:bold;text-align:center;padding-top:.5rem;line-height:1.5rem;}
 .sct2 .bubble span{font-size:1.5rem;line-height:1.5rem;}
 .sct2 .box{width:75rem;height:37.5rem;position:absolute;left:50%;top:50%;margin:-18.75rem 0 0 -37.5rem;}
-.sct2 .box>div{width:19.56rem;height:18rem;margin:0 auto;border-radius:1.87rem;margin-top:-6.25rem;}
+.sct2 .box>div{display:flex;width:19.56rem;height:18rem;border-radius:1.87rem;margin-top:-6.25rem;align-items:center;justify-content:center;}
 .sct2 .box>div .txtWrap{color:#e0e0e0;text-align:center;line-height:1.25rem;padding-top:7rem;}
 .sct2 .box>div .txtWrap p{display:inline-block;padding-bottom:.6em;line-height:1.25em;}
 .sct2 .box>div .txtWrap dl{display:flex;align-items:center;justify-content:center;padding-bottom:.6em;}
+.sct2 .box>div .txtWrap dl:first-of-type:before{content: "";display: block;border-top: 1px solid #fff;width: 80%;position: absolute;top: -1.2em;}
 .sct2 .box>div .txtWrap dt{width:47%;}
 .sct2 .box>div .txtWrap dd{padding-left:.8em;}
 
 .sct2 .box .about1{background:#5b5b5b url(../images/about_edu.png) no-repeat 50% 16%/3.71rem;position:absolute;left:50%;top:16rem;margin-left:-9.78rem;opacity:0;}
 .sct2 .box .about1 .txtWrap{padding-top:5.8rem;}
 .sct2 .box .about2{background:#5b5b5b url(../images/about_profile.png) no-repeat 50% 20%/2.71rem;position:absolute;left:50%;top:16rem;margin-left:-9.78rem;opacity:0;}
+.sct2 .box .about2 .txtWrap p{padding-bottom:2.2em;}
 .sct2 .box .about2 .txtWrap p:nth-of-type(1){margin-right:1em;}
 .sct2 .box .about2 a{color:#e0e0e0;letter-spacing:-.31rem;}
 .sct2 .box .about3{background:#5b5b5b url(../images/about_skils_min.png) no-repeat center 2.81rem;position:absolute;right:50%;margin-right:-9.78rem;top:16rem;opacity:0;}
 .sct2 .box .about3 .skill_wrap{margin-top:6.25rem;text-align:right;}
-.sct2 .box .about3 .skill_wrap .skill1,.skill2,.skill3,.skill4,.skill5{height:1.87rem;text-indent:3.75rem;}
-.sct2 .box .about3 .skill_wrap span{width:6.25rem;color:#e0e0e0;float:left;font-variant:small-caps;}
+.sct2 .box .about3 .skill_wrap .skill1,
+.sct2 .box .about3 .skill_wrap .skill2,
+.sct2 .box .about3 .skill_wrap .skill3,
+.sct2 .box .about3 .skill_wrap .skill4,
+.sct2 .box .about3 .skill_wrap .skill5{height:1.87rem;}
+.sct2 .box .about3 .skill_wrap span{width:2.25rem;color:#e0e0e0;float:left;font-variant:small-caps;}
 .sct2 .box .about3 .skill_wrap span.last{width:8.31rem;height:2.43rem;font-size:.75rem;letter-spacing:-0.02em;background:url(../images/balloon.png)no-repeat;color:#2f2f2f;margin:-1.87rem 0 0 14.35rem;display:none;}
 .sct2 .box .about3 .skill_wrap .graph{float:left;margin:.31rem 0 0 2.18rem;}
 .sct2 .box .about3 .skill_wrap .graph>div{width:1.25rem;height:0.62rem;background:#fff;float:left;margin-right:.25rem;border-radius:50%;}
