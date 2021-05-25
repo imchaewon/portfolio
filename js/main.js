@@ -168,17 +168,23 @@ $(window).scroll(function(){
 //	console.log(ofstop5);//3305
 //	console.log(ofstop6);//4156
 	if(s<ofstop2 - 300){
+		$(".sct1").addClass("on").siblings().removeClass("on");
 		$(".btn_page li:eq(0)").addClass("on").siblings().removeClass("on");
 	}else if(s<ofstop3 - 300){
+		$(".sct2").addClass("on").siblings().removeClass("on");
 		$(".btn_page li:eq(1)").addClass("on").siblings().removeClass("on");
 	}else if(s<ofstop4 - 300){
+		$(".sct3").addClass("on").siblings().removeClass("on");
 		$(".btn_page li:eq(2)").addClass("on").siblings().removeClass("on");
 	}else if(s<ofstop5 - 300){
+		$(".sct4").addClass("on").siblings().removeClass("on");
 		$(".btn_page li:eq(3)").addClass("on").siblings().removeClass("on");
 	}else if(s<ofstop6 - 300){
+		$(".sct5").addClass("on").siblings().removeClass("on");
 		$(".btn_page li:eq(4)").addClass("on").siblings().removeClass("on");
 		$(".sct5 h4").delay(3000).fadeIn(1000).fadeOut(500).fadeIn(500);
 	}else{
+		$(".sct6").addClass("on").siblings().removeClass("on");
 		$(".btn_page li:eq(5)").addClass("on").siblings().removeClass("on");
 		if(sw_pen){
 			sw_pen = false;
