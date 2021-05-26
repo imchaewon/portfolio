@@ -20,7 +20,7 @@ $(window).load(function(){
 	});
 
 	for (let i=0;i<=5;i++){
-		$(".p"+i).click(function(e){
+		$(".pg"+i).click(function(e){
 			let j = parseInt(e.target.className.substr(1,1)) + 1;
 			$("html,body").animate({"scrollTop":eval("ofstop" + j)},"easeOutQuad");
 			$(".btn" + j).addClass("on").siblings().removeClass("on");
