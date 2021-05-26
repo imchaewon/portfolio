@@ -20,6 +20,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: top;
 }
+::selection{background:#e2e8ff;color:#001d9b;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -44,7 +45,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-::selection{background:#e2e8ff;color:#001d9b;}
+img::selection{background:transparent;}
 a{text-decoration:none;color:#333;outline:none;}
 button{margin:0;padding:0;}
 
