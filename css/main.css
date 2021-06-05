@@ -32,7 +32,7 @@
 
 
 html,body{overflow-x:hidden;}
-body{overflow-y:hidden;font-family:'Lobster','Nanum Myeongjo',"malgun gothic","맑은고딕","돋움",dotum,sans-serif;}
+body{overflow-y:hidden;font-family:'Lobster','Nanum Myeongjo',"malgun gothic","맑은고딕","돋움",dotum,sans-serif;background: 001222;}
 
 ::-webkit-scrollbar{
 	min-width:12px;

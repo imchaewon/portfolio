@@ -42,6 +42,7 @@ $(window).load(function(){
 		prevButton: '.sct1 .swiper-button-prev',
 		speed:500,
 		loop:true,
+		effect:'flip',
 		autoplay: 3000,
 		slidesPerView : 'auto',
 		autoplayDisableOnInteraction:true
