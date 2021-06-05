@@ -55,12 +55,14 @@ body {
 .mast__header {
   padding: 5%;
 }
-.mast__title {
+.mast__text{display:none;}
+.swiper-slide-active .mast__text {
+  display:block;
   font-family: "Cutive Mono", monospace;
   font-size: 1em;
-  font-weight: 400;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
+  margin: 0 0 0.5em;
+  line-height: 1.5;
+  white-space: pre;
 }
 .mast__title span {
   animation: letter-glow 0.7s 0s ease both;

@@ -37,16 +37,30 @@ $(window).load(function(){
 		}, 2000);
 	});
 
-	const sct1Sl = new Swiper('.sct1 .swiper-container',{
-		nextButton: '.sct1 .swiper-button-next',
-		prevButton: '.sct1 .swiper-button-prev',
-		speed:500,
-		loop:true,
-		effect:'flip',
-		autoplay: 3000,
-		slidesPerView : 'auto',
-		autoplayDisableOnInteraction:true
-	});
+	(function(){
+		let sw = true;
+		const sct1Sl = new Swiper('.sct1 .swiper-container',{
+			nextButton: '.sct1 .swiper-button-next',
+			prevButton: '.sct1 .swiper-button-prev',
+			speed:500,
+			loop:true,
+			autoplay: 3000,
+			effect: 'flip',
+			slidesPerView : 'auto',
+			autoplayDisableOnInteraction:true,
+			onSlideChangeEnd: function(swiper){
+				if (sw){
+					sw = false;
+				}else{
+					console.log(111);
+					//$(".sct1 .mast__text").removeClass("mast__text");
+					setTimeout(function(){
+						$(".txt").find("p").addClass("mast__text");
+					});
+				}
+			}
+		});
+	})();
 
 	$(".sct2 .bubble").mouseenter(function(){
 		$(this).css("display","none");
