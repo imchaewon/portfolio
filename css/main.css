@@ -313,6 +313,7 @@ position:absolute; left:50%; margin-left:-9.37rem; bottom:-12.5rem;}
 .sct5.on .tit .lft2:after{animation:show 1s 2s forwards;}
 .sct5 .tit .lft li,
 .sct5 .tit .lft2 li{animation-name:fadeInLeft;}
+.sct5 .tit .lft2 p{font-size:0.9rem;position:absolute;color:#fff;bottom:-4rem;line-height:1.2rem;}
 .sct5 .tit .rgt{right:0;}
 .sct5 .tit .rgt li{animation-name:fadeInRight;}
 .sct5 .tit .rgt li h4{position:absolute;top:0;right:-4.7rem;}
