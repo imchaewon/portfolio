@@ -67,7 +67,7 @@ $(window).load(function(){
 			for (let i=1;i<=4;i++){
 				$(".skill4 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (let i=1;i<=4;i++){
+			for (let i=1;i<=3;i++){
 				$(".skill5 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
 		});
