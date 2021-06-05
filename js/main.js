@@ -44,7 +44,7 @@ $(window).load(function(){
 		loop:true,
 		autoplay: 3000,
 		slidesPerView : 'auto',
-		autoplayDisableOnInteraction:false
+		autoplayDisableOnInteraction:true;
 	});
 
 	$(".sct2 .bubble").mouseenter(function(){
