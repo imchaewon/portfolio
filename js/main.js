@@ -38,18 +38,13 @@ $(window).load(function(){
 	});
 
 	const sct1Sl = new Swiper('.sct1 .swiper-container',{
-			nextButton: '.sct1 .swiper-button-next',
-			prevButton: '.sct1 .swiper-button-prev',
-			speed:500,
-			loop:true,
-			autoplay: 3000,
-			slidesPerView : 'auto',
-			autoplayDisableOnInteraction:true
-		},
-		on: {
-		slideChange: function () {
-			alert('슬라이드 변경');
-		}
+		nextButton: '.sct1 .swiper-button-next',
+		prevButton: '.sct1 .swiper-button-prev',
+		speed:500,
+		loop:true,
+		autoplay: 3000,
+		slidesPerView : 'auto',
+		autoplayDisableOnInteraction:true
 	});
 
 	$(".sct2 .bubble").mouseenter(function(){
