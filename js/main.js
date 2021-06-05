@@ -49,15 +49,11 @@ $(window).load(function(){
 			slidesPerView : 'auto',
 			autoplayDisableOnInteraction:true,
 			onSlideChangeEnd: function(swiper){
-				if (sw){
-					sw = false;
-				}else{
-					console.log(111);
-					//$(".sct1 .mast__text").removeClass("mast__text");
-					setTimeout(function(){
-						$(".txt").find("p").addClass("mast__text");
-					});
-				}
+				// if (sw){
+				// 	sw = false;
+				// }else{
+				// 	console.log(111);
+				// }
 			}
 		});
 	})();
