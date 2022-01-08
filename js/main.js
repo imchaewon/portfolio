@@ -63,22 +63,19 @@ $(window).load(function(){
 		$(".about1").delay(300).animate({"left":100,"margin-left":0,"opacity":1},400);
 		$(".about2").delay(0).animate({"top":100,"opacity":1},400);
 		$(".about3").delay(50).animate({"right":100,"margin-right":0,"opacity":1},400,function(){
-			for (let i=1;i<=5;i++){
-				$(".skill" + i + " .graph>div").eq(0).animate({"background-color":"#222"});
-			}
-			for (let i=1;i<=4;i++){
+			for (let i=1;i<4;i++){
 				$(".skill1 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (let i=1;i<=3;i++){
+			for (let i=1;i<5;i++){
 				$(".skill2 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (let i=1;i<=4;i++){
+			for (let i=1;i<5;i++){
 				$(".skill3 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (let i=1;i<=4;i++){
+			for (let i=1;i<5;i++){
 				$(".skill4 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
-			for (let i=1;i<=3;i++){
+			for (let i=1;i<4;i++){
 				$(".skill5 .graph>div").delay(200).eq(i).animate({"background-color":"#222"});
 			}
 		});
