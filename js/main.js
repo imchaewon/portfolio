@@ -21,8 +21,6 @@ $(window).load(function(){
 
 	for (let i=0;i<=5;i++){
 		$(".pg"+i).click(function(e){
-			console.log(e.target.className);
-			console.log(e.target.className.substr(2,3));
 			let j = parseInt(e.target.className.substr(2,3));
 			$("html,body").animate({"scrollTop":eval("ofstop" + j)},"easeOutQuad");
 			$(".btn" + j).addClass("on").siblings().removeClass("on");
